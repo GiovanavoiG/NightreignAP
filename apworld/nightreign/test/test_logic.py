@@ -32,7 +32,7 @@ class TestDefault(NightreignTestBase):
 
 
 class TestDlcEverything(NightreignTestBase):
-    options = {"dlc_forsaken_hollows": True, "deep_of_night_checks": True, "per_run_checks": True, "goal": "all_nightlords"}
+    options = {"dlc_forsaken_hollows": True, "deep_of_night_checks": True, "per_run_checks": True, "run_challenge_pool": "extended", "goal": "all_nightlords"}
 
 
 class TestNoLocks(NightreignTestBase):

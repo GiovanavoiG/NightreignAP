@@ -1,0 +1,253 @@
+param,type,rows,row_size,status
+AcrossDayCorrectParam,ACROSS_DAY_CORRECT_PARAM_ST,10,128,ok
+ActionButtonParam,ACTIONBUTTON_PARAM_ST,220,112,ok
+AiSoundParam,AI_SOUND_PARAM_ST,235,32,ok
+AntiqueStandParam,ANTIQUE_STAND_PARAM_ST,74,24,prefix layout=20 row=24
+AssetEnvironmentGeometryParam,ASSET_GEOMETORY_PARAM_ST,21538,320,ok
+AssetMaterialSfxParam,ASSET_MATERIAL_SFX_PARAM_ST,45,128,ok
+AssetModelSfxParam,ASSET_MODEL_SFX_PARAM_ST,1148,128,ok
+AtkParam_Npc,ATK_PARAM_ST,11783,464,ok
+AtkParam_Pc,ATK_PARAM_ST,8988,464,ok
+AttachEffectFilterCategoryParam,ATTACHEFFECT_FILTER_CATEGORY_PARAM_ST,5,8,ok
+AttachEffectFilterParam,ATTACHEFFECT_FILTER_PARAM_ST,426,20,ok
+AttachEffectFilterSubCategoryParam,ATTACHEFFECT_FILTER_SUB_CATEGORY_PARAM_ST,61,32,no-layout
+AttachEffectParam,ATTACHEFFECT_PARAM_ST,2079,68,ok
+AttachEffectTableParam,ATTACHEFFECT_TABLE_PARAM_ST,22088,12,ok
+AttackElementCorrectParam,ATTACK_ELEMENT_CORRECT_PARAM_ST,152,128,ok
+AutoCreateEnvSoundParam,AUTO_CREATE_ENV_SOUND_PARAM_ST,6,32,ok
+BehaviorParam,BEHAVIOR_PARAM_ST,13103,32,ok
+BehaviorParam_PC,BEHAVIOR_PARAM_ST,10855,32,ok
+BonfireWarpParam,BONFIRE_WARP_PARAM_ST,3,236,ok
+BuddyParam,BUDDY_PARAM_ST,4,112,ok
+BuddyStoneParam,BUDDY_STONE_PARAM_ST,243,64,ok
+BudgetParam,BUDGET_PARAM_ST,5,132,ok
+Bullet,BULLET_PARAM_ST,12254,348,prefix layout=332 row=348
+BulletCreateLimitParam,BULLET_CREATE_LIMIT_PARAM_ST,72,32,ok
+CalcCorrectGraph,CACL_CORRECT_GRAPH_ST,82,80,ok
+Ceremony,CEREMONY_PARAM_ST,26,36,ok
+ChaosMatchingCorrectParam,CHAOS_MATCHING_CORRECT_PARAM_ST,90,20,no-layout
+ChaosMatchingMutationCategoryParam,CHAOS_MATCHING_MUTATION_CATEGORY_PARAM_ST,46,20,no-layout
+ChaosMatchingMutationEnemyTableParam,CHAOS_MATCHING_MUTATION_ENEMY_TABLE_PARAM_ST,3067,48,no-layout
+ChaosMatchingRankControlParam,CHAOS_MATCHING_RANK_CONTROL_PARAM_ST,5,12,no-layout
+ChaosMatchingReplaceTreasureCommon,CHAOS_MATCHING_REPLACE_TREASURE_COMMON_PARAM_ST,1,56,no-layout
+ChaosMatchingReplaceTreasureTable,CHAOS_MATCHING_REPLACE_TREASURE_TABLE_PARAM_ST,397,36,no-layout
+CharaInitParam,CHARACTER_INIT_PARAM,1740,320,ok
+CharMakeMenuListItemParam,CHARMAKEMENU_LISTITEM_PARAM_ST,218,16,ok
+CharMakeMenuTopParam,CHARMAKEMENUTOP_PARAM_ST,203,48,ok
+ChrModelParam,CHR_MODEL_PARAM_ST,348,16,ok
+ChrPhysicsVelocityChangeParam,CHR_PHYSICS_VELOCITY_CHANGE_ST,73,32,ok
+ClearCountCorrectParam,CLEAR_COUNT_CORRECT_PARAM_ST,8,128,ok
+CoolTimeParam,COOL_TIME_PARAM_ST,40,32,ok
+CutsceneGparamTimeParam,CUTSCENE_GPARAM_TIME_PARAM_ST,16,16,ok
+CutsceneGparamWeatherParam,CUTSCENE_GPARAM_WEATHER_PARAM_ST,16,96,ok
+CutsceneMapIdParam,CUTSCENE_MAP_ID_PARAM_ST,17,48,ok
+CutSceneTextureLoadParam,CUTSCENE_TEXTURE_LOAD_PARAM_ST,1,295,prefix layout=260 row=295
+CutsceneTimezoneConvertParam,CUTSCENE_TIMEZONE_CONVERT_PARAM_ST,7,8,ok
+CutsceneWeatherOverrideGparamConvertParam,CUTSCENE_WEATHER_OVERRIDE_GPARAM_ID_CONVERT_PARAM_ST,22,4,ok
+DecalParam,DECAL_PARAM_ST,565,248,prefix layout=247 row=248
+DefeatBossSoulParam,DEFEAT_BOSS_SOUL_PARAM_ST,2,8,ok
+DirectionCameraParam,DIRECTION_CAMERA_PARAM_ST,6,16,ok
+EnemyCommonParam,ENEMY_COMMON_PARAM_ST,1,286,prefix layout=256 row=286
+EnvObjLotParam,ENV_OBJ_LOT_PARAM_ST,13,64,ok
+EquipMtrlSetParam,EQUIP_MTRL_SET_PARAM_ST,365,52,ok
+EquipParamAccessory,EQUIP_PARAM_ACCESSORY_ST,136,64,ok
+EquipParamAntique,EQUIP_PARAM_ANTIQUE_ST,1397,48,ok
+EquipParamCustomWeapon,EQUIP_PARAM_CUSTOM_WEAPON_ST,5148,48,ok
+EquipParamGoods,EQUIP_PARAM_GOODS_ST,433,224,prefix layout=192 row=224
+EquipParamProtector,EQUIP_PARAM_PROTECTOR_ST,307,416,ok
+EquipParamWeapon,EQUIP_PARAM_WEAPON_ST,2317,680,ok
+FaceParam,FACE_PARAM_ST,538,240,ok
+FaceRangeParam,FACE_RANGE_PARAM_ST,2,824,ok
+FallControlParam,FALL_CONTROL_PARAM_ST,20,16,ok
+FeTextEffectParam,FE_TEXT_EFFECT_PARAM_ST,68,32,ok
+FootSfxParam,FOOT_SFX_PARAM_ST,57,800,ok
+GameSystemCommonParam,GAME_SYSTEM_COMMON_PARAM_ST,1,1236,prefix layout=1200 row=1236
+GestureParam,GESTURE_PARAM_ST,56,16,ok
+GparamRefSettings,GPARAM_REF_SETTINGS_PARAM_ST,2,32,ok
+GraphicsCommonParam,GRAPHICS_COMMON_PARAM_ST,1,289,prefix layout=256 row=289
+GraphicsConfig,CS_GRAPHICS_CONFIG_PARAM_ST,9,16,ok
+GrassLodRangeParam,GRASS_LOD_RANGE_PARAM_ST,25,24,ok
+GrassTypeParam,GRASS_TYPE_PARAM_ST,445,276,no-layout
+GrassTypeParam_Lv1,GRASS_TYPE_PARAM_ST,71,276,no-layout
+GrassTypeParam_Lv2,GRASS_TYPE_PARAM_ST,13,276,no-layout
+HeroMenuCameraParam,HERO_MENU_CAMERA_PARAM_ST,6,48,ok
+HeroMenuParam,HERO_MENU_PARAM_ST,10,32,ok
+HeroOperationExplanationParam,HERO_OPERATION_EXPLANATION_PARAM_ST,30,20,ok
+HeroParam,HERO_PARAM_ST,10,176,prefix layout=160 row=176
+HeroStatusParam,HERO_STATUS_PARAM,100,28,ok
+HitEffectSfxConceptParam,HIT_EFFECT_SFX_CONCEPT_PARAM_ST,96,80,ok
+HitEffectSfxParam,HIT_EFFECT_SFX_PARAM_ST,218,80,ok
+HitMtrlParam,HIT_MTRL_PARAM_ST,55,100,ok
+HPEstusFlaskRecoveryParam,ESTUS_FLASK_RECOVERY_PARAM_ST,45,32,ok
+ItemLotParam_enemy,ITEMLOT_PARAM_ST,2741,224,prefix layout=216 row=224
+ItemLotParam_map,ITEMLOT_PARAM_ST,4310,224,prefix layout=216 row=224
+ItemTableParam,ITEMTABLE_PARAM_ST,34730,36,prefix layout=32 row=36
+KeyAssignMenuItemParam,CS_KEY_ASSIGN_MENUITEM_PARAM,50,24,ok
+KeyAssignParam,KEY_ASSIGN_PARAM_ST,72,48,ok
+KnockBackParam,KNOCKBACK_PARAM_ST,7,128,ok
+KnowledgeLoadScreenItemParam,KNOWLEDGE_LOADSCREEN_ITEM_PARAM_ST,65,16,ok
+LegacyDistantViewPartsReplaceParam,LEGACY_DISTANT_VIEW_PARTS_REPLACE_PARAM,1,108,prefix layout=64 row=108
+LimitedDayAssetParam,LIMITED_DAY_ASSET_PARAM_ST,3,64,ok
+LoadBalancerDrawDistScaleParam,LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST,22,128,ok
+LoadBalancerDrawDistScaleParam_ps4,LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST,22,128,ok
+LoadBalancerDrawDistScaleParam_ps5,LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST,22,128,ok
+LoadBalancerDrawDistScaleParam_xb1,LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST,22,128,ok
+LoadBalancerDrawDistScaleParam_xb1x,LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST,22,128,ok
+LoadBalancerDrawDistScaleParam_xss,LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST,22,128,ok
+LoadBalancerDrawDistScaleParam_xsx,LOAD_BALANCER_DRAW_DIST_SCALE_PARAM_ST,22,128,ok
+LoadBalancerNewDrawDistScaleParam_ps4,LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST,14,48,ok
+LoadBalancerNewDrawDistScaleParam_ps5,LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST,1,95,prefix layout=48 row=95
+LoadBalancerNewDrawDistScaleParam_win64,LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST,14,48,ok
+LoadBalancerNewDrawDistScaleParam_xb1,LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST,9,48,ok
+LoadBalancerNewDrawDistScaleParam_xb1x,LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST,9,48,ok
+LoadBalancerNewDrawDistScaleParam_xss,LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST,1,95,prefix layout=48 row=95
+LoadBalancerNewDrawDistScaleParam_xsx,LOAD_BALANCER_NEW_DRAW_DIST_SCALE_PARAM_ST,1,95,prefix layout=48 row=95
+LoadBalancerParam,LOAD_BALANCER_PARAM_ST,20,80,ok
+LobbyMenuNpcParam,LOBBY_MENU_NPC_PARAM_ST,39,20,ok
+LobbyMenuParam,LOBBY_MENU_PARAM_ST,15,32,ok
+LockCamParam,LOCK_CAM_PARAM_ST,309,128,ok
+LotBaseMapPatternFlag,LOT_BASE_MAP_PATTERN_FLAG_ST,254,36,ok
+LotBaseSmallBaseAndSpot,LOT_BASE_SMALBASE_AND_SPOT_ST,192,24,ok
+LotResultMapPatternFlag,LOT_RESULT_MAP_PATTERN_FLAG_ST,5738,28,ok
+LotResultPlayAreaParam,LOT_RESULT_PLAYAREA_PARAM_ST,520,40,ok
+LotResultSmallBaseAndSpot,LOT_RESULT_SMALLBASE_AND_SPOT_ST,23830,24,ok
+Magic,MAGIC_PARAM_ST,178,172,ok
+MagicTableParam,MAGIC_TABLE_PARAM_ST,2350,12,ok
+MainScenarioMenuParam,MAIN_SCENARIO_MENU_PARAM_ST,1,44,prefix layout=12 row=44
+ManualMapPattern,MANUAL_MAP_PATTERN_INFO_ST,2980,108,ok
+MapDefaultInfoParam,MAP_DEFAULT_INFO_PARAM_ST,112,64,ok
+MapGdRegionDrawParam,MAP_GD_REGION_DRAW_PARAM,13,8,ok
+MapGdRegionInfoParam,MAP_GD_REGION_ID_PARAM_ST,59,32,ok
+MapGridCreateHeightLimitInfoParam,MAP_GRID_CREATE_HEIGHT_LIMIT_INFO_PARAM_ST,1,79,prefix layout=32 row=79
+MapMimicryEstablishmentParam,MAP_MIMICRY_ESTABLISHMENT_PARAM_ST,89,64,ok
+MapNameTexParam,MAP_NAME_TEX_PARAM_ST,33,16,ok
+MapPatternCommon,MAP_PATTERN_COMMON_ST,3,28,ok
+MapPatternMapLotCondition,MAP_PATTERN_MAP_LOT_CONDITION_ST,30,28,prefix layout=24 row=28
+MapPatternSet,MAP_PATTERN_SET_PARAM_ST,100,440,prefix layout=328 row=440
+MapPieceTexParam,MAP_PIECE_TEX_PARAM_ST,50,16,ok
+MaterialExParam,MATERIAL_EX_PARAM_ST,381,96,no-layout
+MenuColorTableParam,MENU_PARAM_COLOR_TABLE_ST,118,32,ok
+MenuCommonParam,MENU_COMMON_PARAM_ST,1,349,prefix layout=276 row=349
+MenuOffscrRendParam,MENU_OFFSCR_REND_PARAM_ST,13,64,ok
+MenuPropertyLayoutParam,MENUPROPERTY_LAYOUT,1947,32,ok
+MenuPropertySpecParam,MENUPROPERTY_SPEC,717,32,ok
+MenuValueTableParam,MENU_VALUE_TABLE_SPEC,133,12,ok
+MenuWindowParam,MENU_WINDOW_PARAM_ST,109,44,ok
+MessageBoxParamDialog,MESSAGEBOX_PARAM_ST,123,4,ok
+MessageBoxParamSystem,MESSAGEBOX_PARAM_ST,153,4,ok
+MimicryEstablishmentTexParam,MIMICRY_ESTABLISHMENT_TEX_PARAM_ST,1,55,prefix layout=16 row=55
+MissionManagementParam,MISSION_MANAGEMENT_PARAM_ST,22,16,ok
+MixcraftMagicParam,MIXCRAFT_MAGIC_PARAM_ST,65,16,ok
+MoveParam,MOVE_PARAM_ST,52,144,ok
+MPEstusFlaskRecoveryParam,ESTUS_FLASK_RECOVERY_PARAM_ST,45,32,ok
+MultiHPEstusFlaskBonusParam,MULTI_ESTUS_FLASK_BONUS_PARAM_ST,5,64,ok
+MultiMPEstusFlaskBonusParam,MULTI_ESTUS_FLASK_BONUS_PARAM_ST,5,64,ok
+MultiPlayCorrectionParam,MULTI_PLAY_CORRECTION_PARAM_ST,85,32,ok
+MultiSoulBonusRateParam,MULTI_SOUL_BONUS_RATE_PARAM_ST,5,128,ok
+NetworkMsgParam,NETWORK_MSG_PARAM_ST,6,192,ok
+NetworkParam,NETWORK_PARAM_ST,1,665,prefix layout=648 row=665
+NightBossMenuParam,NIGHT_BOSS_MENU_PARAM_ST,19,68,prefix layout=64 row=68
+NpcAiActionParam,NPC_AI_ACTION_PARAM_ST,323,16,ok
+NpcAiBehaviorProbability,NPC_AI_BEHAVIOR_PROBABILITY_PARAM_ST,518,400,ok
+NPCBotTableParam,NPCBOT_TABLE_PARAM_ST,45,16,ok
+NpcParam,NPC_PARAM_ST,3016,848,prefix layout=816 row=848
+NpcThinkParam,NPC_THINK_PARAM_ST,1322,228,ok
+ObjActParam,OBJ_ACT_PARAM_ST,64,96,ok
+OperationGuideParam,OPERATION_GUIDE_PARAM_ST,28,32,ok
+OverlayMaterialParam,OVERLAY_MATERIAL_PARAM_ST,50,80,no-layout
+PartsDrawParam,PARTS_DRAW_PARAM_ST,577,144,prefix layout=141 row=144
+PermanentBuffParam,PERMANENT_BUFF_PARAM_ST,123,24,ok
+PersonalScenarioParam,PERSONAL_SCENARIO_PARAM_ST,227,48,ok
+PhantomParam,PHANTOM_PARAM_ST,63,56,ok
+PinTypeParam,PIN_TYPE_PARAM_ST,3,36,ok
+PlayAreaCreateCommonParam,PLAY_AREA_CREATE_COMMON_PARAM_ST,3,136,ok
+PlayAreaCreateDefaultParam,PLAY_AREA_CREATE_DEFAULT_PARAM_ST,25,36,ok
+PlayAreaCreateParam,PLAY_AREA_CREATE_PARAM_ST,41,64,ok
+PlayAreaGiantAssetCtrlParam,PLAYAREA_GIANT_ASSET_CTRL_PARAM_ST,1,103,prefix layout=64 row=103
+PlayerCommonParam,PLAYER_COMMON_PARAM_ST,1,783,prefix layout=392 row=783
+PlayRegionParam,PLAY_REGION_PARAM_ST,451,272,ok
+PostureControlParam_Pro,POSTURE_CONTROL_PARAM_PRO_ST,12,64,ok
+PostureControlParam_WepLeft,POSTURE_CONTROL_PARAM_WEP_LEFT_ST,134,32,ok
+PostureControlParam_WepRight,POSTURE_CONTROL_PARAM_WEP_RIGHT_ST,128,192,ok
+RandomAppearParam,RANDOM_APPEAR_PARAM_ST,115,13,ok
+RareMapInfoMenuParam,RARE_MAP_INFO_MENU_PARAM_ST,5,12,ok
+ReinforceParamProtector,REINFORCE_PARAM_PROTECTOR_ST,17,64,ok
+ReinforceParamWeapon,REINFORCE_PARAM_WEAPON_ST,255,132,ok
+ResistCorrectParam,RESIST_CORRECT_PARAM_ST,51,40,ok
+ResultMenuPlaySpeedParam,RESULT_MENU_PLAY_SPEED_PARAM_ST,5,12,ok
+RideParam,RIDE_PARAM_ST,88,64,ok
+RollingObjLotParam,ROLLING_OBJ_LOT_PARAM_ST,1,93,prefix layout=64 row=93
+RuntimeBoneControlParam,RUNTIME_BONE_CONTROL_PARAM_ST,1466,112,ok
+ScenarioPlacementParam,SCENARIO_PLACEMENT_PARAM_ST,330,24,ok
+ScratchedPartsParam,SCRATCHED_PARTS_PARAM_ST,288,20,ok
+SeActivationRangeParam,SE_ACTIVATION_RANGE_PARAM_ST,181,4,ok
+SeMaterialConvertParam,SE_MATERIAL_CONVERT_PARAM_ST,99,4,ok
+SessionRandomAssetTexReplaceParam,SESSION_RANDOM_ASSET_TEX_REPLACE_PARAM_ST,297,200,ok
+SessionRewardByModeRankParam,SESSION_REWARD_BY_MODE_RANK_PARAM_ST,7,64,no-layout
+SessionRewardCommonParam,SESSION_REWARD_COMMON_PARAM_ST,1,103,no-layout
+SfxBlockResShareParam,SFX_BLOCK_RES_SHARE_PARAM,1,34,prefix layout=4 row=34
+ShopLineupParam,SHOP_LINEUP_PARAM,3563,64,ok
+ShopLineupParam_Recipe,SHOP_LINEUP_PARAM,133,64,ok
+SignPuddleParam,SIGN_PUDDLE_PARAM_ST,163,32,ok
+SmallBaseAndSpotAttachPoint,SMALLBASE_AND_SPOT_ATTACH_POINT_ST,562,100,ok
+SmallBaseAndSpotDefine,SMALLBASE_AND_SPOT_DEFINE_ST,107,100,prefix layout=96 row=100
+SmallBaseEnemyLotMapCombinationParam,SMALLBASE_LOT_MAP_COMBINATION_PARAM_ST,11,24,ok
+SmallbaseInvationNpcParam,SMALLBASE_INVATION_NPC_PARAM_ST,11,20,ok
+SmallBaseMapVariationParam,SMALLBASE_MAP_VARIATION_PARAM_ST,362,64,ok
+SmallBaseSfxLodExclusionList,SMALBASE_SFX_LOD_EXCLUSION_LIST_PARAM_ST,1,49,prefix layout=4 row=49
+SortieStartingPoint,SORTIE_STARTING_POINT_ST,23,32,ok
+SoundAssetSoundObjEnableDistParam,SOUND_ASSET_SOUND_OBJ_ENABLE_DIST_PARAM_ST,130,4,ok
+SoundAutoEnvSoundGroupParam,SOUND_AUTO_ENV_SOUND_GROUP_PARAM_ST,11,16,ok
+SoundAutoReverbEvaluationDistParam,SOUND_AUTO_REVERB_EVALUATION_DIST_PARAM_ST,6,20,ok
+SoundAutoReverbSelectParam,SOUND_AUTO_REVERB_SELECT_PARAM_ST,12,32,ok
+SoundChrPhysicsSeParam,SOUND_CHR_PHYSICS_SE_PARAM_ST,13,56,ok
+SoundCommonIngameParam,SOUND_COMMON_INGAME_PARAM_ST,27,64,ok
+SoundCutsceneParam,SOUND_CUTSCENE_PARAM_ST,25,36,ok
+SpeedtreeParam,SPEEDTREE_MODEL_PARAM_ST,169,40,ok
+SpEffectParam,SP_EFFECT_PARAM_ST,13472,1024,prefix layout=976 row=1024
+SpEffectSetParam,SP_EFFECT_SET_PARAM_ST,571,16,ok
+SpEffectVfxParam,SP_EFFECT_VFX_PARAM_ST,1937,164,ok
+SubstoryLinkParam,SUBSTORY_LINK_PARAM_ST,1,35,prefix layout=8 row=35
+SwordArtsParam,SWORD_ARTS_PARAM_ST,194,60,prefix layout=44 row=60
+SwordArtsTableParam,SWORDARTS_TABLE_PARAM_ST,11896,12,ok
+TalkParam,TALK_PARAM_ST,1878,208,ok
+TextEmbedImageParam,TEXT_EMBED_IMAGE_PARAM_ST,19,16,ok
+ThrowCounterParam,THROW_COUNTER_PARAM_ST,82,16,ok
+ThrowDirectionSfxParam,THROW_DIRECTION_SFX_PARAM_ST,57,144,ok
+ThrowParam,THROW_PARAM_ST,1509,128,ok
+ToughnessParam,TOUGHNESS_PARAM_ST,92,32,ok
+TutorialCategoryParam,TUTORIAL_CATEGORY_PARAM_ST,6,16,ok
+TutorialParam,TUTORIAL_PARAM_ST,124,48,ok
+UserDispLogParam,USER_DISP_LOG_PARAM_ST,253,32,ok
+WaypointParam,WAYPOINT_PARAM_ST,6,16,ok
+WeatherAssetCreateParam,WEATHER_ASSET_CREATE_PARAM_ST,1,98,prefix layout=64 row=98
+WeatherAssetReplaceParam,WEATHER_ASSET_REPLACE_PARAM_ST,180,64,ok
+WeatherLotParam,WEATHER_LOT_PARAM_ST,45,82,ok
+WeatherLotTexParam,WEATHER_LOT_TEX_PARAM_ST,25,16,ok
+WeatherParam,WEATHER_PARAM_ST,86,72,ok
+WepAbsorpPosParam,WEP_ABSORP_POS_PARAM_ST,82,96,ok
+WetAspectParam,WET_ASPECT_PARAM_ST,23,32,ok
+WhiteSignCoolTimeParam,WHITE_SIGN_COOL_TIME_PARAM_ST,10,16,ok
+WorldMapLegacyConvParam,WORLD_MAP_LEGACY_CONV_PARAM_ST,1,83,prefix layout=48 row=83
+WorldMapPieceParam,WORLD_MAP_PIECE_PARAM_ST,28,64,ok
+WorldMapPlaceNameParam,WORLD_MAP_PLACE_NAME_PARAM_ST,9,32,ok
+WorldMapPointIconParam,WORLD_MAP_POINT_ICON_PARAM_ST,52,4,ok
+WorldMapPointParam,WORLD_MAP_POINT_PARAM_ST,1053,128,prefix layout=104 row=128
+WwiseValueToStrParam_BgmBossChrIdConv,EVENT_BGM_BOSSCHRID_CONVERT_PARAM_ST,261,40,ok
+WwiseValueToStrParam_BgmEnemyType,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,164,36,ok
+WwiseValueToStrParam_EnvPlaceType,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,38,36,ok
+WwiseValueToStrParam_Switch_AttackStrength,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,3,36,ok
+WwiseValueToStrParam_Switch_AttackType,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,4,36,ok
+WwiseValueToStrParam_Switch_ChrId,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,3,36,ok
+WwiseValueToStrParam_Switch_DamageAmount,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,2,36,ok
+WwiseValueToStrParam_Switch_DeffensiveMaterial,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,140,36,ok
+WwiseValueToStrParam_Switch_GrassHitType,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,2,36,ok
+WwiseValueToStrParam_Switch_HeroId,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,11,36,ok
+WwiseValueToStrParam_Switch_HeroSkin,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,7,36,ok
+WwiseValueToStrParam_Switch_HeroState,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,2,36,ok
+WwiseValueToStrParam_Switch_HitStop,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,3,36,ok
+WwiseValueToStrParam_Switch_OffensiveMaterial,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,12,36,ok
+WwiseValueToStrParam_Switch_PlayerEquipmentBottoms,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,67,36,ok
+WwiseValueToStrParam_Switch_PlayerEquipmentTops,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,67,36,ok
+WwiseValueToStrParam_Switch_PlayerShoes,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,67,36,ok
+WwiseValueToStrParam_Switch_PlayerVoiceType,WWISE_VALUE_TO_STR_CONVERT_PARAM_ST,184,36,ok

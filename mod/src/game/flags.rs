@@ -1,47 +1,48 @@
-//! Event-flag reads/writes and the flag-id catalogue.
-//!
-//! Nightreign, like Elden Ring, records "Nightlord defeated", "Remembrance chapter complete",
-//! "vessel purchased", "character unlocked" etc. as event flags. The ids in `catalogue` are
-//! placeholders (0) until captured. Capture method: Hexinton CE table -> "Event Flag" watch, or
-//! diff `NR0000.sl2` event-flag blocks before/after the action with alfizari's save editor.
-use super::singletons::event_flag_man;
+//! Event flags: calls the game's own CSFD4VirtualMemoryFlag::GetFlag / SetFlag at the pinned,
+//! signature-verified RVAs (research/nightreign_exe_scan.md §7). Layout is ER-compatible:
+//! CSEventFlagMan+0 is the CSFD4VirtualMemoryFlag; divisor +0x1c, holder size +0x20, blocks +0x28,
+//! descriptor tree +0x38; bit = 7 - (id % divisor) % 8. SetFlag silently no-ops for groups without a
+//! descriptor, exactly like Elden Ring.
+use super::rva::{self, SIG_VMF_GET_FLAG, SIG_VMF_SET_FLAG};
+use super::singletons::event_flag_man_ptr;
 use crate::state::SlotData;
+use std::sync::OnceLock;
 
-/// Flag id -> bit lookup mirroring `CSEventFlagMan::getEventFlag` (ER layout; TODO(RE)).
+type GetFlagFn = unsafe extern "C" fn(*mut u8, u32) -> bool;
+type SetFlagFn = unsafe extern "C" fn(*mut u8, u32, bool);
+
+struct FlagFns { get: GetFlagFn, set: SetFlagFn }
+static FNS: OnceLock<Option<FlagFns>> = OnceLock::new();
+
+fn fns() -> Option<&'static FlagFns> {
+    FNS.get_or_init(|| {
+        let r = rva::current()?;
+        if !rva::sig_ok(r.vmf_get_flag, SIG_VMF_GET_FLAG) || !rva::sig_ok(r.vmf_set_flag, SIG_VMF_SET_FLAG) {
+            tracing::error!("event flag function signatures do not match; flags disabled");
+            return None;
+        }
+        unsafe {
+            Some(FlagFns {
+                get: std::mem::transmute::<usize, GetFlagFn>(rva::va(r.vmf_get_flag)),
+                set: std::mem::transmute::<usize, SetFlagFn>(rva::va(r.vmf_set_flag)),
+            })
+        }
+    }).as_ref()
+}
+
 pub fn is_set(flag: u32) -> bool {
-    let Some(efm) = event_flag_man() else { return false };
-    if efm.flag_blocks.is_null() || efm.flag_divisor == 0 { return false; }
-    let block = flag / efm.flag_divisor;
-    let bit = flag % efm.flag_divisor;
-    unsafe {
-        // Blocks are stored in a hash-map-like tree in ER; the DS3 client walks it via the
-        // game's own getter. Until that function is signatured for Nightreign, this is a stub.
-        let _ = (block, bit);
-        get_event_flag_native(flag)
+    if flag == 0 { return false; }
+    match (fns(), event_flag_man_ptr()) {
+        (Some(f), Some(efm)) => unsafe { (f.get)(efm, flag) },
+        _ => false,
     }
 }
 
 pub fn set(flag: u32, value: bool) {
-    unsafe { set_event_flag_native(flag, value) }
-}
-
-// TODO(RE): AOB-scan `CSEventFlagMan::GetEventFlag` / `SetEventFlag` in nightreign.exe.
-// ER 1.10 signatures (for reference, will differ):
-//   get: 48 83 EC 28 8B 02 44 8B C8 ...
-//   set: 48 89 5C 24 08 44 8B 49 1C 44 8B D2 33 D2 41 8B C2 41 F7 F1 ...
-type GetFlagFn = unsafe extern "C" fn(*mut super::singletons::CSEventFlagMan, u32) -> bool;
-type SetFlagFn = unsafe extern "C" fn(*mut super::singletons::CSEventFlagMan, u32, bool);
-static mut GET_FLAG: Option<GetFlagFn> = None;
-static mut SET_FLAG: Option<SetFlagFn> = None;
-
-pub unsafe fn get_event_flag_native(flag: u32) -> bool {
-    match (GET_FLAG, event_flag_man()) {
-        (Some(f), Some(efm)) => f(efm as *mut _, flag),
-        _ => false,
+    if flag == 0 { return; }
+    if let (Some(f), Some(efm)) = (fns(), event_flag_man_ptr()) {
+        unsafe { (f.set)(efm, flag, value) }
     }
-}
-pub unsafe fn set_event_flag_native(flag: u32, value: bool) {
-    if let (Some(f), Some(efm)) = (SET_FLAG, event_flag_man()) { f(efm as *mut _, flag, value) }
 }
 
 pub fn goal_reached(sd: &SlotData) -> bool {
@@ -53,31 +54,33 @@ pub fn goal_reached(sd: &SlotData) -> bool {
     }
 }
 
-/// Well-known flags the mod needs outside of the per-location table sent in slot data.
+/// Well-known flags (all read from regulation 1.03.5 params; see apworld data.py).
 pub mod catalogue {
-    /// NightBossMenuParam.defeat_event_flag, rows 0-9 (regulation 1.03.x). Index order matches
-    /// `data.NIGHTLORDS` in the apworld: Tricephalos..Fissure, Night Aspect, Balancers, Dreglord.
+    /// NightBossMenuParam.defeat_event_flag rows 0-9: Tricephalos..Fissure, Night Aspect, Balancers, Dreglord.
     pub const NIGHTLORD_DEFEATED: [u32; 10] = [150, 151, 152, 153, 154, 155, 156, 160, 161, 162];
-    /// NightBossMenuParam.unlock_event_flag (vanilla gates): 0 = open, 110 = first clear, 115 = all seven.
+    /// NightBossMenuParam.unlock_event_flag: 0 = open, 110 = first clear, 115 = all seven, 135/136 DLC.
     pub const NIGHTLORD_UNLOCK: [u32; 10] = [0, 110, 110, 110, 110, 110, 110, 115, 135, 136];
-    /// Everdark Sovereign defeat flags (online only; informational).
     pub const EVERDARK_DEFEATED: [u32; 8] = [170, 171, 172, 173, 174, 175, 176, 181];
     /// HeroParam.character_unlock_flag (Wylder..Undertaker); 0 = always unlocked.
     pub const NIGHTFARER_UNLOCKED: [u32; 10] = [0, 0, 0, 6031, 0, 6037, 0, 0, 6038, 6039];
-    /// Shifting Earth "available" flags. TODO(RE): not in the params read so far (likely EMEVD/MapPattern).
+    /// Shifting Earth availability: TODO(live) - not in params; likely EMEVD/MapPattern flags.
     pub const SHIFTING_EARTH_AVAILABLE: [u32; 5] = [0; 5];
-    /// NightBossMenuParam row 100 unlock flag (Deep of Night).
+    /// NightBossMenuParam row 100 (Deep of Night) unlock flag.
     pub const DEEP_OF_NIGHT_UNLOCKED: u32 = 130;
-    /// In-expedition flags (EMEVD): boss encounter started / finished, night-boss death guards.
+    /// In-expedition EMEVD flags.
     pub const RUN_ENCOUNTER_STARTED: u32 = 8061;
     pub const RUN_ENCOUNTER_FINISHED: u32 = 8062;
     pub const RUN_NIGHT1_BOSS_DEAD: u32 = 7511;
     pub const RUN_NIGHT2_BOSS_DEAD: u32 = 7512;
 
-    /// AntiqueStandParam vessel unlock flags for hero_type 1..10.
+    /// AntiqueStandParam vessel unlock flags per hero_type 1..10: [Goblet, Chalice, Soot-Covered Urn, Sealed Urn, Decrepit Goblet, Forgotten Goblet].
     pub fn vessel_flags(hero_type: u32) -> [u32; 6] {
-        let b = 60000 + 50 * (hero_type - 1);
-        let e = 60600 + 20 * (hero_type - 1);
-        [b + 10, b + 20, b + 30, b + 40, e, e + 10]
+        match hero_type {
+            9 => [60510, 60520, 60530, 60540, 60760, 60770],
+            10 => [60560, 60570, 60580, 60590, 60780, 60790],
+            h => { let b = 60000 + 50 * (h - 1); let e = 60600 + 20 * (h - 1); [b + 10, b + 20, b + 30, b + 40, e, e + 10] }
+        }
     }
+    /// Shared Grails: Spirit Shelter, Giant's Cradle, Sacred Erdtree, Scadutree (DLC).
+    pub const GRAIL_FLAGS: [u32; 4] = [60410, 60420, 60400, 60430];
 }

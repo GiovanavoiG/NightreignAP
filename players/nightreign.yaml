@@ -8,6 +8,7 @@ Elden Ring Nightreign:
   starting_nightfarer: random_nightfarer
   remembrance_locks: key
   per_run_checks: true
+  run_challenge_pool: extended
   seamless_coop: false
   shifting_earth_locks: true
   night_boss_checks: true

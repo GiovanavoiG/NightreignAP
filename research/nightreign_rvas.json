@@ -1,0 +1,6127 @@
+{
+ "file": "nightreign.exe",
+ "image_base": "0x140000000",
+ "sections": [
+  {
+   "name": ".text",
+   "va": "0x1000",
+   "vsize": 45825024,
+   "raw_off": 1536,
+   "raw_size": 45825024
+  },
+  {
+   "name": ".interpr",
+   "va": "0x2bb5000",
+   "vsize": 52736,
+   "raw_off": "0x2bb4200",
+   "raw_size": 52736
+  },
+  {
+   "name": ".rdata",
+   "va": "0x2bc2000",
+   "vsize": 14429184,
+   "raw_off": "0x2bc1000",
+   "raw_size": 14429184
+  },
+  {
+   "name": ".data",
+   "va": "0x3985000",
+   "vsize": 14187788,
+   "raw_off": "0x3983c00",
+   "raw_size": 2618880
+  },
+  {
+   "name": ".pdata",
+   "va": "0x470d000",
+   "vsize": 2591744,
+   "raw_off": "0x3c03200",
+   "raw_size": 2591744
+  },
+  {
+   "name": "_RDATA",
+   "va": "0x4986000",
+   "vsize": 78848,
+   "raw_off": "0x3e7be00",
+   "raw_size": 78848
+  },
+  {
+   "name": ".rsrc",
+   "va": "0x499a000",
+   "vsize": 253952,
+   "raw_off": "0x3e8f200",
+   "raw_size": 253952
+  },
+  {
+   "name": ".reloc",
+   "va": "0x49d8000",
+   "vsize": 768000,
+   "raw_off": "0x3ecd200",
+   "raw_size": 768000
+  },
+  {
+   "name": ".text",
+   "va": "0x4a94000",
+   "vsize": 52205056,
+   "raw_off": "0x3f88a00",
+   "raw_size": 52205056
+  }
+ ],
+ "version_info": {
+  "lang_id_of_resource": 1041,
+  "fixed_file_version": "1.3.3.0",
+  "fixed_product_version": "1.3.3.0",
+  "strings": {
+   "ProductName": "ELDEN RING NIGHTREIGN",
+   "ProductVersion": "1.3.3.0",
+   "FileVersion": "1.3.3.0",
+   "FileDescription": "ELDEN RING NIGHTREIGN",
+   "InternalName": "ELDEN RING NIGHTREIGN",
+   "CompanyName": "FromSoftware, Inc.",
+   "LegalCopyright": "\u00a9Bandai Namco Entertainment Inc. / \u00a92025 FromSoftware, Inc."
+  },
+  "translation": {
+   "lang": 1033,
+   "codepage": 1200
+  }
+ },
+ "rtti_vftables": {
+  "CSEventFlagMan": null,
+  "CSEventFlagManImp": null,
+  "CSFD4VirtualMemoryFlag": "0x2c2b300",
+  "GameDataMan": null,
+  "GameMan": "0x2c325d8",
+  "WorldChrMan": null,
+  "WorldChrManImp": "0x2c1b930",
+  "CSMenuMan": null,
+  "CSMenuManImp": "0x2c3ad00",
+  "MapItemMan": null,
+  "MapItemManImpl": "0x2c234c0",
+  "SoloParamRepository": null,
+  "SoloParamRepositoryImp": "0x2cb1e08",
+  "MsgRepository": null,
+  "MsgRepositoryImp": "0x2ca9688",
+  "CSSystemProperties": null,
+  "CSSystemPropertiesImp": "0x2cd3ca8",
+  "CSNetMan": null,
+  "CSNetManImp": "0x2bda5d8",
+  "PlayerGameData": "0x2be6e28",
+  "EquipInventoryData": "0x2be4a40",
+  "EquipGameData": "0x2be4970",
+  "CSGaitemGameData": "0x2be41d0",
+  "CSFile": null,
+  "CSFileImp": "0x2bdc638",
+  "CSRegulationManager": null,
+  "CSRegulationManagerImp": "0x2cc44d8",
+  "CSItemGetMenuManImpl": "0x2c3b8e8",
+  "CSGaitemImp": "0x2c32260",
+  "CSGaitemIns": "0x2c32318",
+  "ChrIns": "0x2c0ba90",
+  "PlayerIns": "0x2c307f8",
+  "CSLuaEventManagerImp": null,
+  "CSEventFlagUsageParamManagerImp": null
+ },
+ "derived_singletons": {
+  "0x3c04a28": {
+   "name": "CSFile",
+   "n_sites": 557,
+   "kind": "mov/test"
+  },
+  "0x3c1ac60": {
+   "name": "CSGuiManager",
+   "n_sites": 3,
+   "kind": "mov/test"
+  },
+  "0x3c230e8": {
+   "name": "CSResManager",
+   "n_sites": 1,
+   "kind": "cmp"
+  },
+  "0x3c246a8": {
+   "name": "MsgRepository",
+   "n_sites": 67,
+   "kind": "mov/test"
+  },
+  "0x4707208": {
+   "name": "FD4FileManager",
+   "n_sites": 16,
+   "kind": "mov/test"
+  }
+ },
+ "fd4_get_name_rva": "0x2153380",
+ "fd4_singletons": {
+  "0x3c045a8": {
+   "names": [
+    "AnimThreadMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c045a1"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c046a8": {
+   "names": [
+    "CSNetMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c046a5"
+   ],
+   "n_sites": 330,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c04928": {
+   "names": [
+    "FaceGenMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04926"
+   ],
+   "n_sites": 9,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c049a8": {
+   "names": [
+    "CSEblFileManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04a1f"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c075d8": {
+   "names": [
+    "CSPcKeyConfig"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c071d4"
+   ],
+   "n_sites": 42,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c09860": {
+   "names": [
+    "CSNowLoadingHelper"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c098ff"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c099e8": {
+   "names": [
+    "CSEntryfilelistRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09911"
+   ],
+   "n_sites": 6,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c09b38": {
+   "names": [
+    "CSRapidReentryHelper"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09baf"
+   ],
+   "n_sites": 35,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0a3b8": {
+   "names": [
+    "LuaDatMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a493"
+   ],
+   "n_sites": 19,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0a870": {
+   "names": [
+    "CSTargetBankManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a33c"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0a9c8": {
+   "names": [
+    "CSSightRateRegionMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0aa3f"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0ab38": {
+   "names": [
+    "CSWorldWaypointManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a2cd"
+   ],
+   "n_sites": 24,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0abd8": {
+   "names": [
+    "CSWorldAiManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a2ca"
+   ],
+   "n_sites": 189,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0ae30": {
+   "names": [
+    "CSBulletManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0ad93"
+   ],
+   "n_sites": 32,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0b0e8": {
+   "names": [
+    "CSCamera"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c08b3f"
+   ],
+   "n_sites": 40,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0b320": {
+   "names": [
+    "CSChrAimCamAssistMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0aee1"
+   ],
+   "n_sites": 9,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0b408": {
+   "names": [
+    "CSBattleGroupMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b47f"
+   ],
+   "n_sites": 6,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0b498": {
+   "names": [
+    "CSNecroBuddyMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a2cf"
+   ],
+   "n_sites": 16,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0b518": {
+   "names": [
+    "CSNpcBotMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b5bf"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0b5d0": {
+   "names": [
+    "CSRebornBuddyMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a2ce"
+   ],
+   "n_sites": 11,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0e828": {
+   "names": [
+    "ChrresRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c07b4a"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0ea38": {
+   "names": [
+    "EneDatMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c08d21"
+   ],
+   "n_sites": 17,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0eee0": {
+   "names": [
+    "CSPairAnimManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0d389"
+   ],
+   "n_sites": 26,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0f0a8": {
+   "names": [
+    "WorldChrMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0478c"
+   ],
+   "n_sites": 1181,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0f338": {
+   "names": [
+    "WorldChrManDbg"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04623"
+   ],
+   "n_sites": 155,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c0f3a8": {
+   "names": [
+    "ChrNonActiveBlockManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0f291"
+   ],
+   "n_sites": 14,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0f428": {
+   "names": [
+    "DmgHitRecordMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0ada2"
+   ],
+   "n_sites": 14,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0f4c0": {
+   "names": [
+    "DmgMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0adb9"
+   ],
+   "n_sites": 49,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c0f590": {
+   "names": [
+    "CSDeathBoxInsMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0f62f"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c102a8": {
+   "names": [
+    "CSDbgDistMeasure"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1031f"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c10328": {
+   "names": [
+    "CSDrawGroupDebugManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+0x10)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x3c1039f"
+   ],
+   "n_sites": 8,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c103a8": {
+   "names": [
+    "CSKeyboardDebugMng"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1041f"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c10520": {
+   "names": [
+    "CSPlacementDebugManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0f651"
+   ],
+   "n_sites": 9,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c10698": {
+   "names": [
+    "CSDbgSignboardMng"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05231"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c10718": {
+   "names": [
+    "CSStageDebug"
+   ],
+   "via": "proximity-to-runtime-class-slot(+0x10)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x3c0aa45"
+   ],
+   "n_sites": 14,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c10808": {
+   "names": [
+    "CSDistViewManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0afc1"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c10a18": {
+   "names": [
+    "CSHitMtrlMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c10a8f"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c10b68": {
+   "names": [
+    "MapItemMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c078e7"
+   ],
+   "n_sites": 70,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c10be8": {
+   "names": [
+    "RumbleMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0c149"
+   ],
+   "n_sites": 13,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c10d08": {
+   "names": [
+    "CSEmkSystem"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c10c6c"
+   ],
+   "n_sites": 33,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c10f60": {
+   "names": [
+    "CSLuaEventMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0ee70"
+   ],
+   "n_sites": 69,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c111d0": {
+   "names": [
+    "CSDbgEvent"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0e978"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c11248": {
+   "names": [
+    "CSEventState"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c10f81"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c114b0": {
+   "names": [
+    "CSWorldObjActMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c10d01"
+   ],
+   "n_sites": 32,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c11528": {
+   "names": [
+    "CSEventFlagAllocList"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1159f"
+   ],
+   "n_sites": 6,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c115a8": {
+   "names": [
+    "CSEventFlagMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c078b5"
+   ],
+   "n_sites": 262,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c117c8": {
+   "names": [
+    "CSEventMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c07900"
+   ],
+   "n_sites": 91,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c11848": {
+   "names": [
+    "CSEventRegionMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1053c"
+   ],
+   "n_sites": 15,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c118d8": {
+   "names": [
+    "EventNonActiveBlockManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c117e9"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c124b0": {
+   "names": [
+    "CSWeatherLotRegionMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1053b"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c12538": {
+   "names": [
+    "SmallBaseAttachPointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1053a"
+   ],
+   "n_sites": 8,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c125d8": {
+   "names": [
+    "WorldAreaTime"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a691"
+   ],
+   "n_sites": 28,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c12648": {
+   "names": [
+    "WorldAreaWeather"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a8e2"
+   ],
+   "n_sites": 20,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c13158": {
+   "names": [
+    "WorldPlayAreaManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b561"
+   ],
+   "n_sites": 24,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c131c8": {
+   "names": [
+    "CSGaitem"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c071cc"
+   ],
+   "n_sites": 130,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c13378": {
+   "names": [
+    "CSGeomModelInsDelayCreator"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c133ef"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c134f8": {
+   "names": [
+    "CSWorldGeomMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0a2cc"
+   ],
+   "n_sites": 207,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c135f0": {
+   "names": [
+    "GeomFlagSaveDataManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c111e9"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c13668": {
+   "names": [
+    "GeomNonActiveBlockManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c118d0"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c136e8": {
+   "names": [
+    "BloodStainMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bbd5"
+   ],
+   "n_sites": 23,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c137a0": {
+   "names": [
+    "CSJamaisVuMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b739"
+   ],
+   "n_sites": 33,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c13a78": {
+   "names": [
+    "WanderGhostMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0478d"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c13b30": {
+   "names": [
+    "WorldHitMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bbd4"
+   ],
+   "n_sites": 90,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c13bc8": {
+   "names": [
+    "ActPntMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b084"
+   ],
+   "n_sites": 14,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c13c48": {
+   "names": [
+    "LockTgtMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0ada1"
+   ],
+   "n_sites": 20,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c13d90": {
+   "names": [
+    "WorldMapMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c10513"
+   ],
+   "n_sites": 41,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c149d8": {
+   "names": [
+    "CSMenuMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c046e4"
+   ],
+   "n_sites": 353,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c14a70": {
+   "names": [
+    "CSFeMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0790c"
+   ],
+   "n_sites": 76,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c14c38": {
+   "names": [
+    "CSItemGetMenuMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c10b81"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17248": {
+   "names": [
+    "CSServerInterface"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c046e7"
+   ],
+   "n_sites": 372,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c176a0": {
+   "names": [
+    "CSPlayRegionPointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bbd3"
+   ],
+   "n_sites": 8,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17758": {
+   "names": [
+    "CSBirdMovePointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0c1c1"
+   ],
+   "n_sites": 19,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c177d8": {
+   "names": [
+    "CSActionButtonMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b9dc"
+   ],
+   "n_sites": 19,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17858": {
+   "names": [
+    "CSActionButtonRegionSystem"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b9db"
+   ],
+   "n_sites": 21,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17908": {
+   "names": [
+    "CSAutoInvadePoint"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04dd1"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c179a0": {
+   "names": [
+    "CSFastTravelOverrideRegionMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c12427"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17a18": {
+   "names": [
+    "CSGroupPlacementPointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c078e6"
+   ],
+   "n_sites": 13,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17ac8": {
+   "names": [
+    "CSMapPlaceNameOverrideRegionMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c12426"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17b48": {
+   "names": [
+    "CSOpenChrActivateThresholdRegionMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bbd1"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17be0": {
+   "names": [
+    "CSPinMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b9da"
+   ],
+   "n_sites": 20,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c17c88": {
+   "names": [
+    "CSRespawnPointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c11069"
+   ],
+   "n_sites": 16,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17d48": {
+   "names": [
+    "CSRideJumpRegionMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bf88"
+   ],
+   "n_sites": 8,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17e20": {
+   "names": [
+    "CSWorldMapPointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c102a0"
+   ],
+   "n_sites": 11,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c17eb0": {
+   "names": [
+    "CSRemo"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b129"
+   ],
+   "n_sites": 60,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c18648": {
+   "names": [
+    "CSWorldSceneDrawParamManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c10c7c"
+   ],
+   "n_sites": 11,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c186c8": {
+   "names": [
+    "WorldSfxMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1242a"
+   ],
+   "n_sites": 18,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c18758": {
+   "names": [
+    "CSShareClearDataInsMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c12424"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c18988": {
+   "names": [
+    "CSShareClearDataPointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c12425"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c18a50": {
+   "names": [
+    "WorldSoundMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1053d"
+   ],
+   "n_sites": 31,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c1a680": {
+   "names": [
+    "CSGraphics"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04923"
+   ],
+   "n_sites": 59,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1abc0": {
+   "names": [
+    "CSFade"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1106a"
+   ],
+   "n_sites": 89,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1ac80": {
+   "names": [
+    "CSFD4Location"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0e97a"
+   ],
+   "n_sites": 6,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1aea8": {
+   "names": [
+    "CSLod"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c12429"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1afe8": {
+   "names": [
+    "FlverRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05153"
+   ],
+   "n_sites": 24,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1b138": {
+   "names": [
+    "FontRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c050e1"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1b288": {
+   "names": [
+    "CSGparamRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05bd1"
+   ],
+   "n_sites": 11,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1b3d8": {
+   "names": [
+    "IvInfoRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05d91"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1b6f0": {
+   "names": [
+    "MtdRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06261"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1b928": {
+   "names": [
+    "ShaderbdleRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06811"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1ba18": {
+   "names": [
+    "CpoRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06886"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1bb68": {
+   "names": [
+    "DpoRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06885"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1be08": {
+   "names": [
+    "GpoRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06883"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1bf58": {
+   "names": [
+    "HpoRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06882"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1c0a8": {
+   "names": [
+    "PpoRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06884"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1c268": {
+   "names": [
+    "VpoRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06881"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1c428": {
+   "names": [
+    "TexRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04925"
+   ],
+   "n_sites": 69,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1c578": {
+   "names": [
+    "TpfRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05852"
+   ],
+   "n_sites": 9,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1cca8": {
+   "names": [
+    "CSFakeLoadingScreen"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1a218"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1cec0": {
+   "names": [
+    "CSHkAiManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09222"
+   ],
+   "n_sites": 65,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c1d038": {
+   "names": [
+    "CSHkAiNvmRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1cf61"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1d360": {
+   "names": [
+    "CSHkBehCallBackAdapter"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1d3cf"
+   ],
+   "n_sites": 6,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1d3d8": {
+   "names": [
+    "CSHkBehScriptAdapter"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1d3f1"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1d4a8": {
+   "names": [
+    "CSHkBehManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06d44"
+   ],
+   "n_sites": 36,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1d5a8": {
+   "names": [
+    "CSHkBehScriptRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1d549"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1d768": {
+   "names": [
+    "CSHkBehStringRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1d452"
+   ],
+   "n_sites": 8,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1d9a8": {
+   "names": [
+    "CSWorldNvmManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09221"
+   ],
+   "n_sites": 131,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c1dbe8": {
+   "names": [
+    "CSDebugSeedPointCtrl"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1cf3d"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1dc68": {
+   "names": [
+    "CSBehavior"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c08d22"
+   ],
+   "n_sites": 34,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1df70": {
+   "names": [
+    "CSCloth"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c08b81"
+   ],
+   "n_sites": 49,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c1e028": {
+   "names": [
+    "CSHavokMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c045c1"
+   ],
+   "n_sites": 226,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c20b28": {
+   "names": [
+    "CSHkShapeRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0d303"
+   ],
+   "n_sites": 10,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c20fb0": {
+   "names": [
+    "HkxpwvRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05152"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c210f8": {
+   "names": [
+    "CSHavokCompendiumRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05461"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c21248": {
+   "names": [
+    "HkxRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05151"
+   ],
+   "n_sites": 10,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c21398": {
+   "names": [
+    "NvaRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06421"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c214e8": {
+   "names": [
+    "NvcRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c063b1"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c21638": {
+   "names": [
+    "CSBlockPlayerList"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c14961"
+   ],
+   "n_sites": 12,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c21e50": {
+   "names": [
+    "CSNetworkUserManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04750"
+   ],
+   "n_sites": 43,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c21ec8": {
+   "names": [
+    "CSSessionManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c046e6"
+   ],
+   "n_sites": 847,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c21f48": {
+   "names": [
+    "CSTeamSessionDataMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1575c"
+   ],
+   "n_sites": 23,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c21fc8": {
+   "names": [
+    "CSTeamSessionManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c078e5"
+   ],
+   "n_sites": 80,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c22048": {
+   "names": [
+    "CSTestUserNameManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c21ec2"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c220d0": {
+   "names": [
+    "CSWordChecker"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05701"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c22150": {
+   "names": [
+    "NetLocalDebugBufferQueue"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c19cc8"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c22500": {
+   "names": [
+    "CSPlatformNetworkMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c046e5"
+   ],
+   "n_sites": 16,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c22750": {
+   "names": [
+    "RendMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c045a0"
+   ],
+   "n_sites": 355,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c22ba8": {
+   "names": [
+    "AnibndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c045a2"
+   ],
+   "n_sites": 19,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c22cf8": {
+   "names": [
+    "GeombndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05a81"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c22e48": {
+   "names": [
+    "GeomhkxbndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05af1"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c22f98": {
+   "names": [
+    "BehbndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04e41"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23300": {
+   "names": [
+    "CSEddRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05691"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23448": {
+   "names": [
+    "EsdRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c069d1"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23598": {
+   "names": [
+    "CSEmkResMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c123ef"
+   ],
+   "n_sites": 13,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23618": {
+   "names": [
+    "CSEmedfRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c052a1"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23708": {
+   "names": [
+    "CSEmeldRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05311"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c237f8": {
+   "names": [
+    "CSEmevdRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05381"
+   ],
+   "n_sites": 10,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c238e8": {
+   "names": [
+    "FfxRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05853"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23a38": {
+   "names": [
+    "FfxreslistRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05851"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23b88": {
+   "names": [
+    "GfxRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05b61"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23d48": {
+   "names": [
+    "LuaRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c05ee1"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23e98": {
+   "names": [
+    "CSMapbndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c054d1"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c23fe8": {
+   "names": [
+    "PartsbndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06651"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c240d8": {
+   "names": [
+    "MpwRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c060a1"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c24388": {
+   "names": [
+    "MsbRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06181"
+   ],
+   "n_sites": 8,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c24628": {
+   "names": [
+    "CSMsbPointMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1053e"
+   ],
+   "n_sites": 51,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c246b0": {
+   "names": [
+    "MsgTagMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0f582"
+   ],
+   "n_sites": 57,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c27538": {
+   "names": [
+    "OnavRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06491"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c27688": {
+   "names": [
+    "CSEventFlagUsageParamManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c115c1"
+   ],
+   "n_sites": 6,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c27708": {
+   "names": [
+    "ParamRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06501"
+   ],
+   "n_sites": 25,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c27cb0": {
+   "names": [
+    "SystemParamRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c277f1"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c28880": {
+   "names": [
+    "SoloParamRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c046a4"
+   ],
+   "n_sites": 261,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c28990": {
+   "names": [
+    "PartsRelationinfobndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c066c1"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c28ad8": {
+   "names": [
+    "CsResMemStatistics"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bbd2"
+   ],
+   "n_sites": 54,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c28ca8": {
+   "names": [
+    "RumblebndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06731"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c28d98": {
+   "names": [
+    "ScaleformTexRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c068f9"
+   ],
+   "n_sites": 13,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c28e18": {
+   "names": [
+    "WavbndRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c06c01"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c28f08": {
+   "names": [
+    "CSScaleformArabic"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c28f7f"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c299c8": {
+   "names": [
+    "CSScaleform"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c098a9"
+   ],
+   "n_sites": 65,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2a098": {
+   "names": [
+    "CSSfx"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09c1c"
+   ],
+   "n_sites": 160,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c2a128": {
+   "names": [
+    "CSDebugBankPlayerMng"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09c61"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2a3b0": {
+   "names": [
+    "CSSound"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04624"
+   ],
+   "n_sites": 155,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c2a768": {
+   "names": [
+    "MoWwiseMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09e02"
+   ],
+   "n_sites": 82,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c2a8a8": {
+   "names": [
+    "CSFD4MoWwisebankRepository"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c07b49"
+   ],
+   "n_sites": 42,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2acd8": {
+   "names": [
+    "CSBudgetMonitor"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c27d86"
+   ],
+   "n_sites": 34,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2aff8": {
+   "names": [
+    "CSBugReportManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c197a0"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2c1a0": {
+   "names": [
+    "CSCheatEOS"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c15594"
+   ],
+   "n_sites": 36,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c2c830": {
+   "names": [
+    "CSDbgIdName"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bb93"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2cc18": {
+   "names": [
+    "CSPanic"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c2c312"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2d128": {
+   "names": [
+    "SoundEventCheckMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c09e01"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2d218": {
+   "names": [
+    "CSDlc"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04d61"
+   ],
+   "n_sites": 43,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x3c2d400": {
+   "names": [
+    "CSRegulationManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c055b1"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2d640": {
+   "names": [
+    "EntityThumbnailMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c08b82"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2d728": {
+   "names": [
+    "CSGxLoadBalancerHelper"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0e681"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2d7a8": {
+   "names": [
+    "CSLoadBalancer"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0f290"
+   ],
+   "n_sites": 6,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2d828": {
+   "names": [
+    "CSMemLoadBalancer"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c12428"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x3c2df48": {
+   "names": [
+    "CSMemory"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bbd6"
+   ],
+   "n_sites": 9,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442e028": {
+   "names": [
+    "CSMouseMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c14958"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442e0a8": {
+   "names": [
+    "CSMovie"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c14bb1"
+   ],
+   "n_sites": 12,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442e7b0": {
+   "names": [
+    "CSPerfMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c2c311"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442e8a8": {
+   "names": [
+    "CSPlaygo"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04bfc"
+   ],
+   "n_sites": 18,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442ec00": {
+   "names": [
+    "CSPlaylogSystem"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0bf71"
+   ],
+   "n_sites": 72,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442f1d0": {
+   "names": [
+    "CSSystemProperties"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c07ab0"
+   ],
+   "n_sites": 89,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x442f288": {
+   "names": [
+    "CSPS5Activity"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c078e4"
+   ],
+   "n_sites": 11,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442f3f8": {
+   "names": [
+    "CSReportSystem"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c2b072"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442f688": {
+   "names": [
+    "MsgCheckReport"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c14844"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "cmp"
+   ]
+  },
+  "0x442f960": {
+   "names": [
+    "CSTrophy"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c078b4"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x442f9e8": {
+   "names": [
+    "UserConfig"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c07959"
+   ],
+   "n_sites": 50,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442fa68": {
+   "names": [
+    "UserMan"
+   ],
+   "via": "proximity-to-runtime-class-slot(+0x10)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x3c14960"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442fb88": {
+   "names": [
+    "CSDelayDeleteMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c04924"
+   ],
+   "n_sites": 23,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442fe78": {
+   "names": [
+    "CSEzWorkPool"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0abb4"
+   ],
+   "n_sites": 17,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442fef8": {
+   "names": [
+    "CSFlipper"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c07aaf"
+   ],
+   "n_sites": 45,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x442ff78": {
+   "names": [
+    "CSLuaConsoleServer"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0abb3"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4433980": {
+   "names": [
+    "CSWindow"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c078ec"
+   ],
+   "n_sites": 38,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4433a18": {
+   "names": [
+    "CSResidentTalkFileMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x4433a8f"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4433a98": {
+   "names": [
+    "CSScenarioPlacementManager"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c07654"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4433df0": {
+   "names": [
+    "CSWorldTalkMan"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c0b9d9"
+   ],
+   "n_sites": 62,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4434000": {
+   "names": [
+    "CSTask"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c08b83"
+   ],
+   "n_sites": 24,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4434088": {
+   "names": [
+    "CSTaskGroup"
+   ],
+   "via": "vftable-rtti",
+   "confidence": "CONFIRMED",
+   "keys": [
+    "0x3c1ac78"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4706e98": {
+   "names": [
+    "FD4DebugMenuManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4706e8c"
+   ],
+   "n_sites": 276,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x4707290": {
+   "names": [
+    "FD4ComponentAttachSystemSeed"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x47071f8"
+   ],
+   "n_sites": 22,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707350": {
+   "names": [
+    "FD4HkClothClm2Repository"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4708fdf"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707370": {
+   "names": [
+    "FD4HkClothDataRepository"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x470908f"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x47073d0": {
+   "names": [
+    "FD4ParamdefRepositoryImplement"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707220"
+   ],
+   "n_sites": 8,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707d48": {
+   "names": [
+    "FD4PadManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+0x10)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707d37"
+   ],
+   "n_sites": 57,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707dd8": {
+   "names": [
+    "FD4HkClothManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707dc9"
+   ],
+   "n_sites": 7,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707df8": {
+   "names": [
+    "FD4HkClothCollidableDataRepositoryImp"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x470982f"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707e18": {
+   "names": [
+    "FD4RemoManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x10)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707e00"
+   ],
+   "n_sites": 24,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707e38": {
+   "names": [
+    "FD4MqbRepositoryImp"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707e20"
+   ],
+   "n_sites": 3,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707e68": {
+   "names": [
+    "FD4RemoHkxRepositoryImp"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707e50"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707e90": {
+   "names": [
+    "FD4FontManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707e80"
+   ],
+   "n_sites": 5,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707ea8": {
+   "names": [
+    "FD4RemoteUserInputSystem"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707dc8"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707ed0": {
+   "names": [
+    "FD4EzDrawManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707db1"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707ee8": {
+   "names": [
+    "FD4HkEzDrawRigidBodyDispBufferManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707ed8"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707f68": {
+   "names": [
+    "FD4ParameterManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707f58"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707f70": {
+   "names": [
+    "FD4ParamNametdfRepository"
+   ],
+   "via": "proximity-to-runtime-class-slot(+0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707f48"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4707f90": {
+   "names": [
+    "FD4ParamNametdfRepositoryImplement"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x47073e8"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4708010": {
+   "names": [
+    "FD4ReportSystem"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4708000"
+   ],
+   "n_sites": 9,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x4708070": {
+   "names": [
+    "FD4LoggerManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x470a4c3"
+   ],
+   "n_sites": 2,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4708090": {
+   "names": [
+    "FD4PerformanceManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x10)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4708078"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4708140": {
+   "names": [
+    "FD4PerfManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x10)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4708128"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "cmp",
+    "mov/test"
+   ]
+  },
+  "0x47081f0": {
+   "names": [
+    "FD4DelayDeleteManager"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x47081e0"
+   ],
+   "n_sites": 4,
+   "kinds": [
+    "mov/test"
+   ]
+  },
+  "0x4708438": {
+   "names": [
+    "FD4ParamtdfRepository"
+   ],
+   "via": "proximity-to-runtime-class-slot(+-0x8)",
+   "confidence": "LIKELY",
+   "keys": [
+    "0x4707f49"
+   ],
+   "n_sites": 1,
+   "kinds": [
+    "mov/test"
+   ]
+  }
+ },
+ "runtime_class_slots": {
+  "0x3c045b8": "AnimThreadMan",
+  "0x3c046b8": "CSNetMan",
+  "0x3c048c0": "CSDebugMenuDeleyDeleter",
+  "0x3c04938": "FaceGenMan",
+  "0x3c049b8": "CSEblFileManager",
+  "0x3c04a38": "CSFileImp",
+  "0x3c04aa8": "CSFileRepository",
+  "0x3c04b18": "CSFileSeed",
+  "0x3c04b90": "CSFileStep::THIS_CLASS",
+  "0x3c04ba0": "CSFileStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c04bb0": "CSStepTask< CSFileStep >",
+  "0x3c04bc0": "CSFileStep",
+  "0x3c04d58": "AnibndFileCap",
+  "0x3c04dc8": "AutoInvadePointBndFileCap",
+  "0x3c04e38": "BehbndFileCap",
+  "0x3c04ea8": "BhdFileCap",
+  "0x3c04f18": "BhdMultiMountFileCap",
+  "0x3c04f88": "BreakgeomFileCap",
+  "0x3c04ff8": "BreakobjFileCap",
+  "0x3c05068": "BtlFileCap",
+  "0x3c050d8": "CcmFileCap",
+  "0x3c05148": "ChrbndFileCap",
+  "0x3c051b8": "ChrtpfbhdFileCap",
+  "0x3c05228": "CSDbgSignboardFileCap",
+  "0x3c05298": "CSEmedfFileCap",
+  "0x3c05308": "CSEmeldFileCap",
+  "0x3c05378": "CSEmevdFileCap",
+  "0x3c053e8": "CSEventFlagAllocListFileCap",
+  "0x3c05458": "CSHavokCompendiumFileCap",
+  "0x3c054c8": "CSMapbndFileCap",
+  "0x3c05538": "CSPreMapDecalFileCap",
+  "0x3c055a8": "CSRegbndFileCap",
+  "0x3c05618": "CSRtasbndFileCap",
+  "0x3c05688": "CSTalkeddbndFileCap",
+  "0x3c056f8": "CSWcmsgbndFileCap",
+  "0x3c05768": "DdsFileCap",
+  "0x3c057d8": "EntityThumbnailCaptureListFileCap",
+  "0x3c05848": "FfxbndFileCap",
+  "0x3c058b8": "FfxFileCap",
+  "0x3c05928": "FlverFileCap",
+  "0x3c05998": "FontTpfFileCap",
+  "0x3c05a08": "FvbFileCap",
+  "0x3c05a78": "GeombndFileCap",
+  "0x3c05ae8": "GeomhkxbndFileCap",
+  "0x3c05b58": "GfxFileCap",
+  "0x3c05bc8": "GparamFileCap",
+  "0x3c05c38": "HkxbhdMultiMountFileCap",
+  "0x3c05ca8": "HkxFileCap",
+  "0x3c05d18": "IdNameFileCap",
+  "0x3c05d88": "IvInfobndFileCap",
+  "0x3c05df8": "LoadlistFileCap",
+  "0x3c05e68": "LoadlistlistFileCap",
+  "0x3c05ed8": "LuabndFileCap",
+  "0x3c05f48": "LuaFileCap",
+  "0x3c05fb8": "CaptureMapNameListFileCap",
+  "0x3c06028": "MapInfoTexbndFileCap",
+  "0x3c06098": "MpwFileCap",
+  "0x3c06108": "MsbdebugFileCap",
+  "0x3c06178": "MsbFileCap",
+  "0x3c061e8": "MsgbndFileCap",
+  "0x3c06258": "MtdbndFileCap",
+  "0x3c062c8": "MtdFileCap",
+  "0x3c06338": "CSMtmskbndFileCap",
+  "0x3c063a8": "NvcFileCap",
+  "0x3c06418": "NvaFileCap",
+  "0x3c06488": "OnavFileCap",
+  "0x3c064f8": "ParambndFileCap",
+  "0x3c06568": "ParamdefbndFileCap",
+  "0x3c065d8": "ParamFileCap",
+  "0x3c06648": "PartsbndFileCap",
+  "0x3c066b8": "PartsRelationinfobndFileCap",
+  "0x3c06728": "RumblebndFileCap",
+  "0x3c06798": "ShaderbdlebndDebugFileCap",
+  "0x3c06808": "ShaderbdlebndFileCap",
+  "0x3c06878": "ShaderbndFileCap",
+  "0x3c068f0": "ShoeboxLayoutbndFileCap",
+  "0x3c06958": "SoloFileCap",
+  "0x3c069c8": "TalkesdbndFileCap",
+  "0x3c06a38": "TexbndFileCap",
+  "0x3c06aa8": "TpfbhdMultiMountFileCap",
+  "0x3c06b18": "TpfbndFileCap",
+  "0x3c06b88": "TpfFileCap",
+  "0x3c06bf8": "WavbndFileCap",
+  "0x3c06c68": "WwiseBankInfoTextFileCap",
+  "0x3c06cd8": "WwiseEventInfoFileCap",
+  "0x3c06d88": "CSLoadProcessor_Anibnd",
+  "0x3c06df8": "CSLoadProcessor_BndBase",
+  "0x3c06e68": "CSLoadProcessor_Chrbnd",
+  "0x3c06ee0": "CSLoadProcessor_Mapbnd",
+  "0x3c06ef0": "CSLoadProcessor_Geombnd",
+  "0x3c06f00": "CSLoadProcessor_Partsbnd",
+  "0x3c07010": "CSLoadProcessor_Rtasbnd",
+  "0x3c07078": "CSLoadProcessor_Texbnd",
+  "0x3c070e8": "CSLoadProcessor_Tpf",
+  "0x3c07158": "CSLoadProcessor_Tpfbnd",
+  "0x3c075e8": "CSPcKeyConfig",
+  "0x3c07920": "CSDebugBootMenuStep::THIS_CLASS",
+  "0x3c07930": "CSDebugBootMenuStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c07940": "CSStepTask< CSDebugBootMenuStep >",
+  "0x3c07950": "CSDebugBootMenuStep",
+  "0x3c07b10": "CSModelViewerInsStep_forChrId::THIS_CLASS",
+  "0x3c07b20": "CSModelViewerInsStep_forChrId::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c07b30": "CSStepTask< CSModelViewerInsStep_forChrId >",
+  "0x3c07b40": "CSModelViewerInsStep_forChrId",
+  "0x3c07ca8": "CSModelViewerInsStep_forGeom::THIS_CLASS",
+  "0x3c07cb8": "CSModelViewerInsStep_forGeom::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c07cc8": "CSStepTask< CSModelViewerInsStep_forGeom >",
+  "0x3c07cd8": "CSModelViewerInsStep_forGeom",
+  "0x3c07e48": "CSModelViewerInsStep_forLoadlist::THIS_CLASS",
+  "0x3c07e58": "CSModelViewerInsStep_forLoadlist::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c07e68": "CSStepTask< CSModelViewerInsStep_forLoadlist >",
+  "0x3c07e78": "CSModelViewerInsStep_forLoadlist",
+  "0x3c07fe8": "CSModelViewerInsStep_forMap::THIS_CLASS",
+  "0x3c07ff8": "CSModelViewerInsStep_forMap::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c08008": "CSStepTask< CSModelViewerInsStep_forMap >",
+  "0x3c08018": "CSModelViewerInsStep_forMap",
+  "0x3c08188": "CSModelViewerInsStep_forMapenv::THIS_CLASS",
+  "0x3c08198": "CSModelViewerInsStep_forMapenv::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c081a8": "CSStepTask< CSModelViewerInsStep_forMapenv >",
+  "0x3c081b8": "CSModelViewerInsStep_forMapenv",
+  "0x3c08328": "CSModelViewerInsStep_forParts::THIS_CLASS",
+  "0x3c08338": "CSModelViewerInsStep_forParts::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c08348": "CSStepTask< CSModelViewerInsStep_forParts >",
+  "0x3c08358": "CSModelViewerInsStep_forParts",
+  "0x3c084c8": "CSModelViewerInsStep_forSkybox::THIS_CLASS",
+  "0x3c084d8": "CSModelViewerInsStep_forSkybox::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c084e8": "CSStepTask< CSModelViewerInsStep_forSkybox >",
+  "0x3c084f8": "CSModelViewerInsStep_forSkybox",
+  "0x3c08668": "CSModelViewerList::THIS_CLASS",
+  "0x3c08678": "CSModelViewerList::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c08688": "CSStepLocal< CSModelViewerList >",
+  "0x3c08698": "CSModelViewerList",
+  "0x3c08808": "CSModelViewerListStep::THIS_CLASS",
+  "0x3c08818": "CSModelViewerListStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c08828": "CSStepTask< CSModelViewerListStep >",
+  "0x3c08838": "CSModelViewerListStep",
+  "0x3c089a8": "CSModelViewerPlayerModelCtrl::THIS_CLASS",
+  "0x3c089b8": "CSModelViewerPlayerModelCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c089c8": "CSStepLocal< CSModelViewerPlayerModelCtrl >",
+  "0x3c089d8": "CSModelViewerPlayerModelCtrl",
+  "0x3c08b48": "CSModelViewerStep::THIS_CLASS",
+  "0x3c08b58": "CSModelViewerStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c08b68": "CSStepTask< CSModelViewerStep >",
+  "0x3c08b78": "CSModelViewerStep",
+  "0x3c08ce8": "ModuleHavokBehaviorTestStep::THIS_CLASS",
+  "0x3c08cf8": "ModuleHavokBehaviorTestStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c08d08": "CSStepTask< ModuleHavokBehaviorTestStep >",
+  "0x3c08d18": "ModuleHavokBehaviorTestStep",
+  "0x3c08e88": "ModuleLoadTestStep::THIS_CLASS",
+  "0x3c08e98": "ModuleLoadTestStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c08ea8": "CSStepTask< ModuleLoadTestStep >",
+  "0x3c08eb8": "ModuleLoadTestStep",
+  "0x3c09038": "ModuleLockFreeQueueTestStep::THIS_CLASS",
+  "0x3c09048": "ModuleLockFreeQueueTestStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c09058": "CSStepTask< ModuleLockFreeQueueTestStep >",
+  "0x3c09068": "ModuleLockFreeQueueTestStep",
+  "0x3c091e8": "ModuleNaviMeshGenerateTestStep::THIS_CLASS",
+  "0x3c091f8": "ModuleNaviMeshGenerateTestStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c09208": "CSStepTask< ModuleNaviMeshGenerateTestStep >",
+  "0x3c09218": "ModuleNaviMeshGenerateTestStep",
+  "0x3c09388": "ModuleNaviMeshTestStep::THIS_CLASS",
+  "0x3c09398": "ModuleNaviMeshTestStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c093a8": "CSStepTask< ModuleNaviMeshTestStep >",
+  "0x3c093b8": "ModuleNaviMeshTestStep",
+  "0x3c09530": "ModuleOffscreenRendTestStep::THIS_CLASS",
+  "0x3c09540": "ModuleOffscreenRendTestStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c09550": "CSStepTask< ModuleOffscreenRendTestStep >",
+  "0x3c09560": "ModuleOffscreenRendTestStep",
+  "0x3c096c8": "ModuleTestSelectStep::THIS_CLASS",
+  "0x3c096d8": "ModuleTestSelectStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c096e8": "CSStepTask< ModuleTestSelectStep >",
+  "0x3c096f8": "ModuleTestSelectStep",
+  "0x3c098a0": "CSNowLoadingHelper",
+  "0x3c09908": "CSEntryfilelistbndFileCap",
+  "0x3c09978": "CSEntryfilelistFileCap",
+  "0x3c099f8": "CSEntryfilelistRepositoryImp",
+  "0x3c09a08": "CSEntryfilelistRepository",
+  "0x3c09ac8": "CSEntryfilelistResCap",
+  "0x3c09b48": "CSRapidReentryHelper",
+  "0x3c09c28": "CSSfxViewerStep::THIS_CLASS",
+  "0x3c09c38": "CSSfxViewerStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c09c48": "CSStepTask< CSSfxViewerStep >",
+  "0x3c09c58": "CSSfxViewerStep",
+  "0x3c09dc8": "CSWwiseSoundTestStep::THIS_CLASS",
+  "0x3c09dd8": "CSWwiseSoundTestStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c09de8": "CSStepTask< CSWwiseSoundTestStep >",
+  "0x3c09df8": "CSWwiseSoundTestStep",
+  "0x3c09f68": "TitleFlowStep::THIS_CLASS",
+  "0x3c09f78": "TitleFlowStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c09f88": "CSStepTask< TitleFlowStep >",
+  "0x3c09f98": "TitleFlowStep",
+  "0x3c0a108": "CSEzTextlistSelector::THIS_CLASS",
+  "0x3c0a118": "CSEzTextlistSelector::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c0a128": "CSStepLocal< CSEzTextlistSelector >",
+  "0x3c0a138": "CSEzTextlistSelector",
+  "0x3c0a348": "LuaDat",
+  "0x3c0a3c8": "LuaDatManImp",
+  "0x3c0a3d8": "LuaDatMan",
+  "0x3c0a688": "CSAiFunc",
+  "0x3c0a6f8": "CSGoalFunc",
+  "0x3c0a768": "AiScriptGoalInfo",
+  "0x3c0a7f8": "AiScriptLogicInfo",
+  "0x3c0a880": "CSTargetBankManager",
+  "0x3c0a8e8": "CSTargetingSystem",
+  "0x3c0a960": "CSTargetingSystemBase",
+  "0x3c0a9e0": "CSSightRateRegionMan",
+  "0x3c0aa48": "CSAiPlatoonCommand",
+  "0x3c0aab8": "CSAiPlatoonFunc",
+  "0x3c0ab48": "CSWorldWaypointManager",
+  "0x3c0abe0": "CSWorldAiManager",
+  "0x3c0ac48": "CSWorldAreaAi",
+  "0x3c0acb8": "CSWorldAreaAiBase",
+  "0x3c0ad28": "CSWorldGridAreaAi",
+  "0x3c0adb0": "CSBulletIns",
+  "0x3c0ae50": "CSBulletManager",
+  "0x3c0aed8": "ChrAimCam",
+  "0x3c0af48": "ChrAnalyzeCam",
+  "0x3c0afb8": "ChrCam",
+  "0x3c0b028": "ChrExFollowCam",
+  "0x3c0b120": "CSCamera",
+  "0x3c0b190": "CSCameraStep::THIS_CLASS",
+  "0x3c0b1a0": "CSCameraStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c0b1b0": "CSStepTask< CSCameraStep >",
+  "0x3c0b1c0": "CSCameraStep",
+  "0x3c0b330": "CSChrAimCamAssistMan",
+  "0x3c0b398": "CSDistViewCam",
+  "0x3c0b418": "CSBattleGroupMan",
+  "0x3c0b4b0": "CSNecroBuddyMan",
+  "0x3c0b558": "CSNpcBotMan",
+  "0x3c0b5e0": "CSRebornBuddyMan",
+  "0x3c0b650": "ChrCtrl",
+  "0x3c0b6b8": "ChrManipulator",
+  "0x3c0b730": "ComManipulator",
+  "0x3c0b7a0": "CSJamaisVuReplayManipulator",
+  "0x3c0b808": "EnemyCtrl",
+  "0x3c0b878": "FollowManipulator",
+  "0x3c0b8f0": "NetAIManipulator",
+  "0x3c0b960": "NetworkManipulator",
+  "0x3c0b9d0": "PadManipulator",
+  "0x3c0ba38": "PlayerCtrl",
+  "0x3c0bab8": "ReplayManipulator",
+  "0x3c0bb30": "RideManipulator",
+  "0x3c0bbc8": "ChrIns",
+  "0x3c0bc58": "CSChrAboveShadowTestModule",
+  "0x3c0bcc8": "CSChrActionFlagModule",
+  "0x3c0bd88": "CSChrActionRequestModule",
+  "0x3c0bdf8": "CSChrAnalyzeCamModule",
+  "0x3c0be90": "CSPlayerAnalyzeCamModule",
+  "0x3c0bef8": "CSChrAutoHomingModule",
+  "0x3c0bf90": "CSChrBehaviorDataModule",
+  "0x3c0c000": "CSChrBehaviorModule",
+  "0x3c0c068": "CSChrBehaviorScriptModule",
+  "0x3c0c0d8": "CSChrBehaviorSyncModule",
+  "0x3c0c150": "CSChrTimeActModule",
+  "0x3c0c1b8": "CSChrBirdMoveModule",
+  "0x3c0c228": "CSChrBoneMoveModule",
+  "0x3c0c298": "CSChrBonePileModule",
+  "0x3c0c308": "CSChrCliffWindModule",
+  "0x3c0c378": "CSChrAiModule",
+  "0x3c0c3f0": "CSChrDataModule",
+  "0x3c0c460": "CSChrEventModule",
+  "0x3c0c4c8": "CSChrModelParamModifierModule",
+  "0x3c0c538": "CSChrModuleBase",
+  "0x3c0c5b0": "CSChrResistModule",
+  "0x3c0c618": "CSChrTalkModule",
+  "0x3c0c6c0": "CSChrDamageModule",
+  "0x3c0c728": "CSEnemyDamageModule",
+  "0x3c0c7a0": "CSPlayerDamageModule",
+  "0x3c0c810": "CSDebugAutoEquipModule",
+  "0x3c0c878": "CSChrDrippingModule",
+  "0x3c0c8f0": "CSChrFallModule",
+  "0x3c0c960": "CSChrFatalDamageDodgeModule",
+  "0x3c0c9d8": "CSChrGrassHitModule",
+  "0x3c0ca48": "CSChrHitStopModule",
+  "0x3c0cab8": "CSChrHookshotModule",
+  "0x3c0cb30": "CSChrJamaisVuModule",
+  "0x3c0cba0": "CSChrJointModule",
+  "0x3c0cc08": "CSPlayerJointModule",
+  "0x3c0cc78": "CSChrKnockBackModule",
+  "0x3c0cce8": "CSEnemyKnockBackModule",
+  "0x3c0cd58": "CSPlayerKnockBackModule",
+  "0x3c0cdc8": "CSChrLadderModule",
+  "0x3c0ce38": "CSPlayerLadderModule",
+  "0x3c0cea8": "CSChrMagicModule",
+  "0x3c0cf18": "CSEnemyMagicModule",
+  "0x3c0cf90": "CSPlayerMagicModule",
+  "0x3c0d000": "CSChrMajyuuModule",
+  "0x3c0d068": "CSChrMaterialModule",
+  "0x3c0d0d8": "CSEnemyMaterialModule",
+  "0x3c0d148": "CSPlayerMaterialModule",
+  "0x3c0d1b8": "CSChrMixcraftMagicModule",
+  "0x3c0d228": "CSChrNavimeshCostEffectModule",
+  "0x3c0d298": "CSChrNecroBuddyModule",
+  "0x3c0d380": "CSChrPhysicsModule",
+  "0x3c0d8f8": "CSChrPlayerResonanceModule",
+  "0x3c0d970": "CSChrPostureControlModule",
+  "0x3c0d9d8": "CSChrRebornBuddyModule",
+  "0x3c0da48": "CSChrRideModule",
+  "0x3c0dab8": "CSRideNode",
+  "0x3c0dc20": "CSChrScratchedPartsModule",
+  "0x3c0dc90": "CSChrSfxModule",
+  "0x3c0dcf8": "CSChrSkillModule",
+  "0x3c0dd68": "CSChrSuperArmorModule",
+  "0x3c0e0b8": "CSEnemySuperArmorModule",
+  "0x3c0e128": "CSPlayerSuperArmorModule",
+  "0x3c0e1a0": "CSChrSwordArtsModule",
+  "0x3c0e208": "CSChrThrowCounterModule",
+  "0x3c0e278": "CSChrThrowModule",
+  "0x3c0e3d0": "CSChrToughnessModule",
+  "0x3c0e440": "CSEnemyToughnessModule",
+  "0x3c0e4b0": "CSPlayerToughnessModule",
+  "0x3c0e518": "CSChrTransModule",
+  "0x3c0e588": "CSChrVfxModule",
+  "0x3c0e608": "CSChrWallEdgeLandingModule",
+  "0x3c0e678": "CSChrWetModule",
+  "0x3c0e6e8": "CSChrWheelRotModule",
+  "0x3c0e758": "ChrRes::THIS_CLASS",
+  "0x3c0e768": "ChrRes::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c0e838": "ChrresRepositoryImp",
+  "0x3c0e848": "ChrresRepository",
+  "0x3c0e908": "ChrresResCap",
+  "0x3c0e9c8": "EneDat",
+  "0x3c0ea48": "EneDatMan",
+  "0x3c0eac0": "EnemyIns",
+  "0x3c0eb30": "Generator::THIS_CLASS",
+  "0x3c0eb40": "Generator::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c0eb50": "CSStepLocal< Generator >",
+  "0x3c0eb60": "Generator",
+  "0x3c0ecd0": "CSDisplayGhost::THIS_CLASS",
+  "0x3c0ece0": "CSDisplayGhost::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c0ecf0": "CSStepLocal< CSDisplayGhost >",
+  "0x3c0ed00": "CSDisplayGhost",
+  "0x3c0eef0": "CSPairAnimManager",
+  "0x3c0efc0": "ReplayEnemyIns",
+  "0x3c0f030": "ReplayGhostIns",
+  "0x3c0f0c8": "WorldChrMan",
+  "0x3c0f340": "WorldChrManDbg",
+  "0x3c0f3b8": "ChrNonActiveBlockManager",
+  "0x3c0f438": "DmgHitRecordMan",
+  "0x3c0f518": "DmgMan",
+  "0x3c0f5c8": "CSDeathBoxInsMan",
+  "0x3c0f638": "CSDebugChrCreator::THIS_CLASS",
+  "0x3c0f648": "CSDebugChrCreator::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c102b8": "CSDbgDistMeasure",
+  "0x3c10338": "CSDrawGroupDebugManager",
+  "0x3c103b8": "CSKeyboardDebugMng",
+  "0x3c10428": "CSLocatePointListManager",
+  "0x3c104a8": "CSMsbMapLayoutExportDebugManager",
+  "0x3c10530": "CSPlacementDebugManager",
+  "0x3c105a8": "CSPlayerWarpToolMan",
+  "0x3c10628": "CSDebugScreenNotifyMsgMan",
+  "0x3c106a8": "CSDbgSignboardMng",
+  "0x3c10728": "CSStageDebug",
+  "0x3c107a0": "CSGUICustomListView",
+  "0x3c10820": "CSDistViewManagerImp::THIS_CLASS",
+  "0x3c10830": "CSDistViewManagerImp::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c10840": "CSStepLocal< CSDistViewManagerImp >",
+  "0x3c10850": "CSDistViewManagerImp",
+  "0x3c10860": "CSDistViewManager",
+  "0x3c10a28": "CSHitMtrlMan",
+  "0x3c10aa8": "CSPauseMan",
+  "0x3c10b78": "MapItemMan",
+  "0x3c10bf8": "RumbleMan",
+  "0x3c10d58": "CSEmkSystem",
+  "0x3c10dd0": "CSEmkSystemUpdateTask::THIS_CLASS",
+  "0x3c10de0": "CSEmkSystemUpdateTask::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c10df0": "CSStepTask< CSEmkSystemUpdateTask >",
+  "0x3c10e00": "CSEmkSystemUpdateTask",
+  "0x3c10f78": "CSLuaEventMan",
+  "0x3c11060": "CSLuaEventScriptImitation",
+  "0x3c111e0": "CSDbgEvent",
+  "0x3c11258": "CSEventState",
+  "0x3c11308": "CSObjActUpdateTask::THIS_CLASS",
+  "0x3c11318": "CSObjActUpdateTask::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c11328": "CSStepTask< CSObjActUpdateTask >",
+  "0x3c11338": "CSObjActUpdateTask",
+  "0x3c114c0": "CSWorldObjActMan",
+  "0x3c11538": "CSEventFlagAllocList",
+  "0x3c115b8": "CSEventFlagMan",
+  "0x3c11630": "CSEventFlagResStep::THIS_CLASS",
+  "0x3c11640": "CSEventFlagResStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c11650": "CSStepTask< CSEventFlagResStep >",
+  "0x3c11660": "CSEventFlagResStep",
+  "0x3c117e0": "CSEventMan",
+  "0x3c11860": "CSEventRegionMan",
+  "0x3c118e8": "EventNonActiveBlockManager",
+  "0x3c11960": "CSEventCutsceneWarpCtrl::THIS_CLASS",
+  "0x3c11970": "CSEventCutsceneWarpCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c11980": "CSStepLocal< CSEventCutsceneWarpCtrl >",
+  "0x3c11990": "CSEventCutsceneWarpCtrl",
+  "0x3c11b08": "CSEventFadeWarpCtrl::THIS_CLASS",
+  "0x3c11b18": "CSEventFadeWarpCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c11b28": "CSStepLocal< CSEventFadeWarpCtrl >",
+  "0x3c11b38": "CSEventFadeWarpCtrl",
+  "0x3c11cf8": "CSEventNetworkErrorLeaveOnlineModeStep::THIS_CLASS",
+  "0x3c11d08": "CSEventNetworkErrorLeaveOnlineModeStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c11d18": "CSStepLocal< CSEventNetworkErrorLeaveOnlineModeStep >",
+  "0x3c11d28": "CSEventNetworkErrorLeaveOnlineModeStep",
+  "0x3c11ea0": "CSEventNetworkErrorReturnTitleStep::THIS_CLASS",
+  "0x3c11eb0": "CSEventNetworkErrorReturnTitleStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c11ec0": "CSStepLocal< CSEventNetworkErrorReturnTitleStep >",
+  "0x3c11ed0": "CSEventNetworkErrorReturnTitleStep",
+  "0x3c12068": "CSEventScenarioRecollectionCtrl::THIS_CLASS",
+  "0x3c12078": "CSEventScenarioRecollectionCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c12088": "CSStepLocal< CSEventScenarioRecollectionCtrl >",
+  "0x3c12098": "CSEventScenarioRecollectionCtrl",
+  "0x3c12250": "CSEventWorldAreaTimeCtrl::THIS_CLASS",
+  "0x3c12260": "CSEventWorldAreaTimeCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c12270": "CSStepLocal< CSEventWorldAreaTimeCtrl >",
+  "0x3c12280": "CSEventWorldAreaTimeCtrl",
+  "0x3c12430": "FieldInsBase",
+  "0x3c124c8": "CSWeatherLotRegionMan",
+  "0x3c12570": "SmallBaseAttachPointMan",
+  "0x3c125e0": "WorldAreaTime",
+  "0x3c12650": "WorldAreaWeather",
+  "0x3c129e8": "PlayerIns",
+  "0x3c12a70": "PlayAreaCreateStepTask::THIS_CLASS",
+  "0x3c12a80": "PlayAreaCreateStepTask::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c12a90": "CSStepTask<PlayAreaCreateStepTask>",
+  "0x3c12aa0": "PlayAreaCreateStepTask",
+  "0x3c13160": "WorldPlayAreaManager",
+  "0x3c131d8": "CSGaitem",
+  "0x3c13310": "CSRollingObjOverrideRegionMan",
+  "0x3c13388": "CSGeomModelInsDelayCreator",
+  "0x3c13400": "CSWorldGeomDynamicIns",
+  "0x3c13488": "CSWorldGeomIns",
+  "0x3c13510": "CSWorldGeomMan",
+  "0x3c13578": "CSWorldGeomStaticIns",
+  "0x3c13600": "GeomFlagSaveDataManager",
+  "0x3c13678": "GeomNonActiveBlockManager",
+  "0x3c13700": "BloodStainMan",
+  "0x3c137e8": "CSJamaisVuMan",
+  "0x3c138e0": "WanderGhostDrawSwitcher::THIS_CLASS",
+  "0x3c138f0": "WanderGhostDrawSwitcher::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c13900": "CSStepLocal< WanderGhostDrawSwitcher >",
+  "0x3c13910": "WanderGhostDrawSwitcher",
+  "0x3c13a88": "WanderGhostMan",
+  "0x3c13b58": "WorldHitMan",
+  "0x3c13bd8": "ActPntMan",
+  "0x3c13c58": "LockTgtMan",
+  "0x3c13d18": "CSEzSelectMoveMapListItem",
+  "0x3c13d98": "WorldMapMan",
+  "0x3c13e10": "CSMenuAutoNavigation::THIS_CLASS",
+  "0x3c13e20": "CSMenuAutoNavigation::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c13e30": "CSStepLocal< CSMenuAutoNavigation >",
+  "0x3c13e40": "CSMenuAutoNavigation",
+  "0x3c14970": "CSDebugFe",
+  "0x3c149e8": "CSMenuMan",
+  "0x3c14ba8": "CSFeMan",
+  "0x3c14c48": "CSItemGetMenuMan",
+  "0x3c15418": "CSMtmskRepositoryImp",
+  "0x3c15428": "CSMtmskRepository",
+  "0x3c154e8": "CSMtmskResCap",
+  "0x3c17148": "CSMapbndResCapBase",
+  "0x3c17158": "ObjbndResCapBase",
+  "0x3c17258": "CSServerInterface",
+  "0x3c17368": "CSQuickMatchingCtrl::THIS_CLASS",
+  "0x3c17378": "CSQuickMatchingCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c17500": "CSNetDomainCollector::THIS_CLASS",
+  "0x3c17510": "CSNetDomainCollector::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c17520": "CSStepLocal< CSNetDomainCollector >",
+  "0x3c17530": "CSNetDomainCollector",
+  "0x3c176f0": "CSPlayRegionPointMan",
+  "0x3c17770": "CSBirdMovePointMan",
+  "0x3c177e8": "CSActionButtonMan",
+  "0x3c17898": "CSActionButtonRegionSystem",
+  "0x3c17918": "CSAutoInvadePoint",
+  "0x3c179b0": "CSFastTravelOverrideRegionMan",
+  "0x3c17a58": "CSGroupPlacementPointMan",
+  "0x3c17ae0": "CSMapPlaceNameOverrideRegionMan",
+  "0x3c17b70": "CSOpenChrActivateThresholdRegionMan",
+  "0x3c17be8": "CSPinMan",
+  "0x3c17ce0": "CSRespawnPointMan",
+  "0x3c17d98": "CSRideJumpRegionMan",
+  "0x3c17e28": "CSWorldMapPointMan",
+  "0x3c17eb8": "CSRemo",
+  "0x3c17f30": "CSRemoStep::THIS_CLASS",
+  "0x3c17f40": "CSRemoStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c17f50": "CSStepTask< CSRemoStep >",
+  "0x3c17f60": "CSRemoStep",
+  "0x3c180f0": "CSRemoIns::THIS_CLASS",
+  "0x3c18100": "CSRemoIns::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c18110": "CSStepLocal< CSRemoIns >",
+  "0x3c18120": "CSRemoIns",
+  "0x3c18290": "CSRemoMan::THIS_CLASS",
+  "0x3c182a0": "CSRemoMan::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c182b0": "CSStepLocal< CSRemoMan >",
+  "0x3c182c0": "CSRemoMan",
+  "0x3c18430": "CSRemoRes::THIS_CLASS",
+  "0x3c18440": "CSRemoRes::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c18450": "CSStepLocal< CSRemoRes >",
+  "0x3c18460": "CSRemoRes",
+  "0x3c185c8": "CSFD4RemobndFileCap",
+  "0x3c18658": "CSWorldSceneDrawParamManager",
+  "0x3c186d8": "WorldSfxMan",
+  "0x3c18760": "CSShareClearDataInsManImp::THIS_CLASS",
+  "0x3c18770": "CSShareClearDataInsManImp::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c18780": "CSStepLocal<CSShareClearDataInsManImp>",
+  "0x3c18790": "CSShareClearDataInsManImp",
+  "0x3c187c8": "CSShareClearDataInsMan",
+  "0x3c189a0": "CSShareClearDataPointMan",
+  "0x3c18a70": "WorldSoundMan",
+  "0x3c18ae0": "CSSystemParamStep::THIS_CLASS",
+  "0x3c18af0": "CSSystemParamStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c18b00": "CSStepTask< CSSystemParamStep >",
+  "0x3c18b10": "CSSystemParamStep",
+  "0x3c18cb0": "EndingStep::THIS_CLASS",
+  "0x3c18cc0": "EndingStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c18cd0": "CSStepTask<EndingStep>",
+  "0x3c18ce0": "EndingStep",
+  "0x3c18e50": "GameRootStep::THIS_CLASS",
+  "0x3c18e60": "GameRootStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c18e70": "CSStepTask< GameRootStep >",
+  "0x3c18e80": "GameRootStep",
+  "0x3c18fe8": "InGameStayStep::THIS_CLASS",
+  "0x3c18ff8": "InGameStayStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c19008": "CSStepTask< InGameStayStep >",
+  "0x3c19018": "InGameStayStep",
+  "0x3c191c0": "InGameStep::THIS_CLASS",
+  "0x3c191d0": "InGameStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c191e0": "CSStepTask<InGameStep>",
+  "0x3c191f0": "InGameStep",
+  "0x3c19398": "CharaSelectStep::THIS_CLASS",
+  "0x3c193a8": "CharaSelectStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c193b8": "CSStepTask<CharaSelectStep>",
+  "0x3c193c8": "CharaSelectStep",
+  "0x3c19560": "MoveMapListStep::THIS_CLASS",
+  "0x3c19570": "MoveMapListStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c19580": "CSStepTask<MoveMapListStep>",
+  "0x3c19590": "MoveMapListStep",
+  "0x3c19730": "MoveMapStep::THIS_CLASS",
+  "0x3c19740": "MoveMapStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c19750": "CSStepTask<MoveMapStep>",
+  "0x3c19760": "MoveMapStep",
+  "0x3c19910": "RejoinMapEnterStep::THIS_CLASS",
+  "0x3c19920": "RejoinMapEnterStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c19930": "CSStepLocal<RejoinMapEnterStep>",
+  "0x3c19940": "RejoinMapEnterStep",
+  "0x3c19aa8": "MsgStep::THIS_CLASS",
+  "0x3c19ab8": "MsgStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c19ac8": "CSStepTask< MsgStep >",
+  "0x3c19ad8": "MsgStep",
+  "0x3c19c50": "TestNetStep::THIS_CLASS",
+  "0x3c19c60": "TestNetStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c19c70": "CSStepTask<TestNetStep>",
+  "0x3c19c80": "TestNetStep",
+  "0x3c19e28": "ParamStep::THIS_CLASS",
+  "0x3c19e38": "ParamStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c19e48": "CSStepTask< ParamStep >",
+  "0x3c19e58": "ParamStep",
+  "0x3c19ff0": "SimpleTitleStep::THIS_CLASS",
+  "0x3c1a000": "SimpleTitleStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1a010": "CSStepTask<SimpleTitleStep>",
+  "0x3c1a020": "SimpleTitleStep",
+  "0x3c1a1b0": "TitleStep::THIS_CLASS",
+  "0x3c1a1c0": "TitleStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1a1d0": "CSStepTask<TitleStep>",
+  "0x3c1a1e0": "TitleStep",
+  "0x3c1a370": "CSCam",
+  "0x3c1a3d8": "CSDebugCam",
+  "0x3c1a448": "CSPersCam",
+  "0x3c1a4c0": "CSDrawStep::THIS_CLASS",
+  "0x3c1a4d0": "CSDrawStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1a4e0": "CSStepTask< CSDrawStep >",
+  "0x3c1a4f0": "CSDrawStep",
+  "0x3c1a8a8": "CSGraphics",
+  "0x3c1a920": "CSGraphicsStep::THIS_CLASS",
+  "0x3c1a930": "CSGraphicsStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1a940": "CSStepTask< CSGraphicsStep >",
+  "0x3c1a950": "CSGraphicsStep",
+  "0x3c1aae8": "CSPreMapDecalResCap",
+  "0x3c1abf0": "CSFade",
+  "0x3c1ac90": "CSFD4Location",
+  "0x3c1ad00": "CSFD4LocationStep::THIS_CLASS",
+  "0x3c1ad10": "CSFD4LocationStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1ad20": "CSStepTask< CSFD4LocationStep >",
+  "0x3c1ad30": "CSFD4LocationStep",
+  "0x3c1aef0": "CSLod",
+  "0x3c1af80": "CSFlverResDelayDeletion",
+  "0x3c1aff8": "FlverRepositoryImp",
+  "0x3c1b008": "FlverRepository",
+  "0x3c1b0c8": "FlverResCap",
+  "0x3c1b148": "FontRepositoryImp",
+  "0x3c1b158": "FontRepository",
+  "0x3c1b218": "FontResCap",
+  "0x3c1b298": "CSGparamRepositoryImp",
+  "0x3c1b2a8": "CSGparamRepository",
+  "0x3c1b368": "CSGparamResCap",
+  "0x3c1b3e8": "IvInfoRepositoryImp",
+  "0x3c1b3f8": "IvInfoRepository",
+  "0x3c1b4b8": "IvInfoResCap",
+  "0x3c1b700": "MtdRepositoryImp",
+  "0x3c1b710": "MtdRepository",
+  "0x3c1b7c8": "MtdResCap",
+  "0x3c1b848": "ShaderbdleDebugRepository",
+  "0x3c1b8b8": "ShaderbdleDebugResCap",
+  "0x3c1b938": "ShaderbdleRepository",
+  "0x3c1b9a8": "ShaderbdleResCap",
+  "0x3c1ba28": "CpoRepositoryImp",
+  "0x3c1ba38": "CpoRepository",
+  "0x3c1baf8": "CpoResCap",
+  "0x3c1bb78": "DpoRepositoryImp",
+  "0x3c1bb88": "DpoRepository",
+  "0x3c1bc48": "DpoResCap",
+  "0x3c1bcc8": "FlverShaderGroupRepositoryImp",
+  "0x3c1bcd8": "FlverShaderGroupRepository",
+  "0x3c1bda0": "FlverShaderGroupResCap",
+  "0x3c1be18": "GpoRepositoryImp",
+  "0x3c1be28": "GpoRepository",
+  "0x3c1bee8": "GpoResCap",
+  "0x3c1bf68": "HpoRepositoryImp",
+  "0x3c1bf78": "HpoRepository",
+  "0x3c1c038": "HpoResCap",
+  "0x3c1c0b8": "PpoRepositoryImp",
+  "0x3c1c0c8": "PpoRepository",
+  "0x3c1c188": "PpoResCap",
+  "0x3c1c1f8": "ShaderResCap",
+  "0x3c1c278": "VpoRepositoryImp",
+  "0x3c1c288": "VpoRepository",
+  "0x3c1c348": "VpoResCap",
+  "0x3c1c3b8": "CSRuntimeTexResCap",
+  "0x3c1c438": "TexRepositoryImp",
+  "0x3c1c448": "TexRepository",
+  "0x3c1c510": "TexResCap",
+  "0x3c1c588": "TpfRepositoryImp",
+  "0x3c1c598": "TpfRepository",
+  "0x3c1c658": "TpfResCap",
+  "0x3c1ca20": "CsEnvMapCaptureIns::THIS_CLASS",
+  "0x3c1ca30": "CsEnvMapCaptureIns::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1cb08": "CSMenuAsmModelRend::THIS_CLASS",
+  "0x3c1cb18": "CSMenuAsmModelRend::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1cb28": "CSStepLocal< CSMenuAsmModelRend >",
+  "0x3c1cb38": "CSMenuAsmModelRend",
+  "0x3c1ccb8": "CSFakeLoadingScreen",
+  "0x3c1ced0": "CSHkAiManager",
+  "0x3c1cf58": "CSHkAiNvmbndFileCap",
+  "0x3c1cfc8": "CSHkAiNvmFileCap",
+  "0x3c1d048": "CSHkAiNvmRepository",
+  "0x3c1d058": "CSHkAiNvmRepositoryImp",
+  "0x3c1d120": "CSHkAiNvmRepositorySeed",
+  "0x3c1d188": "CSHkAiNvmResCap",
+  "0x3c1d1f8": "CSHkAiNvmResCapSeed",
+  "0x3c1d270": "CSHkAiNaviMeshSectionTraverseCallback",
+  "0x3c1d2d8": "CSHkAiNaviMeshTraverseCallback",
+  "0x3c1d370": "CSHkBehCallBackAdapter",
+  "0x3c1d3e8": "CSHkBehScriptAdapter",
+  "0x3c1d4c0": "CSHkBehManager",
+  "0x3c1d540": "CSHkBehScriptFileCap",
+  "0x3c1d5b8": "CSHkBehScriptRepository",
+  "0x3c1d5c8": "CSHkBehScriptRepositoryImp",
+  "0x3c1d688": "CSHkBehScriptResCap",
+  "0x3c1d6f8": "CSHkBehStringFileCap",
+  "0x3c1d778": "CSHkBehStringRepository",
+  "0x3c1d7f0": "CSCollectNearNaviMeshParts::THIS_CLASS",
+  "0x3c1d800": "CSCollectNearNaviMeshParts::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1d810": "CSStepLocal< CSCollectNearNaviMeshParts >",
+  "0x3c1d820": "CSCollectNearNaviMeshParts",
+  "0x3c1d9b8": "CSWorldNvmManager",
+  "0x3c1dbf8": "CSDebugSeedPointCtrl",
+  "0x3c1dc98": "CSBehavior",
+  "0x3c1dd08": "CSBehCommonScript::THIS_CLASS",
+  "0x3c1dd18": "CSBehCommonScript::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1dde0": "CSBehStringStep::THIS_CLASS",
+  "0x3c1ddf0": "CSBehStringStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c1de00": "CSStepTask< CSBehStringStep >",
+  "0x3c1de10": "CSBehStringStep",
+  "0x3c1dfb8": "CSCloth",
+  "0x3c1e0e0": "CSHavokMan",
+  "0x3c20b38": "CSHkShapeRepository",
+  "0x3c20ba8": "CSPhysIns",
+  "0x3c20c20": "CSPhysSysIns",
+  "0x3c20fc0": "HkxpwvRepositoryImp",
+  "0x3c20fd0": "HkxpwvRepository",
+  "0x3c21088": "HkxpwvResCap",
+  "0x3c21108": "CSHavokCompendiumRepositoryImp",
+  "0x3c21118": "CSHavokCompendiumRepository",
+  "0x3c211d8": "CSHavokCompendiumResCap",
+  "0x3c21258": "HkxRepositoryImp",
+  "0x3c21268": "HkxRepository",
+  "0x3c21330": "HkxResCap",
+  "0x3c213a8": "NvaRepository",
+  "0x3c213b8": "NvaRepositoryImp",
+  "0x3c21480": "NvaResCap",
+  "0x3c214f8": "NvcRepository",
+  "0x3c21508": "NvcRepositoryImp",
+  "0x3c215d0": "NvcResCap",
+  "0x3c21648": "CSBlockPlayerList",
+  "0x3c216c0": "CSInitSyncStep::THIS_CLASS",
+  "0x3c216d0": "CSInitSyncStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c216e0": "CSStepLocal< CSInitSyncStep >",
+  "0x3c216f0": "CSInitSyncStep",
+  "0x3c21ca0": "CSNetworkFlowStep::THIS_CLASS",
+  "0x3c21cb0": "CSNetworkFlowStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c21cc0": "CSStepLocal< CSNetworkFlowStep >",
+  "0x3c21cd0": "CSNetworkFlowStep",
+  "0x3c21e60": "CSNetworkUserManager",
+  "0x3c21ee0": "CSSessionManager",
+  "0x3c21f58": "CSTeamSessionDataMan",
+  "0x3c21fd8": "CSTeamSessionManager",
+  "0x3c22058": "CSTestUserNameManager",
+  "0x3c220e0": "CSWordChecker",
+  "0x3c22158": "NetLocalDebugBufferQueue",
+  "0x3c221d0": "CSMultiplayPrivilegeCheckStep::THIS_CLASS",
+  "0x3c221e0": "CSMultiplayPrivilegeCheckStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c221f0": "CSStepLocal< CSMultiplayPrivilegeCheckStep >",
+  "0x3c22200": "CSMultiplayPrivilegeCheckStep",
+  "0x3c22368": "CSNetFpsCheckStep::THIS_CLASS",
+  "0x3c22378": "CSNetFpsCheckStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c22388": "CSStepLocal< CSNetFpsCheckStep >",
+  "0x3c22398": "CSNetFpsCheckStep",
+  "0x3c22530": "CSPlatformNetworkMan",
+  "0x3c225a0": "CSPSPlusCheckStep::THIS_CLASS",
+  "0x3c225b0": "CSPSPlusCheckStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c225c0": "CSStepLocal< CSPSPlusCheckStep >",
+  "0x3c225d0": "CSPSPlusCheckStep",
+  "0x3c22a88": "RendMan",
+  "0x3c22b08": "StageRend",
+  "0x3c22bb8": "AnibndRepositoryImp",
+  "0x3c22bc8": "AnibndRepository",
+  "0x3c22c88": "AnibndResCap",
+  "0x3c22d08": "GeombndRepositoryImp",
+  "0x3c22d18": "GeombndRepository",
+  "0x3c22dd8": "GeombndResCap",
+  "0x3c22e58": "GeomhkxbndRepositoryImp",
+  "0x3c22e68": "GeomhkxbndRepository",
+  "0x3c22f28": "GeomhkxbndResCap",
+  "0x3c22fa8": "BehbndRepositoryImp",
+  "0x3c22fb8": "BehbndRepository",
+  "0x3c23078": "BehbndResCap",
+  "0x3c230f8": "CSResManagerImp",
+  "0x3c23170": "CSResStep::THIS_CLASS",
+  "0x3c23180": "CSResStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c23190": "CSStepTask< CSResStep >",
+  "0x3c231a0": "CSResStep",
+  "0x3c23310": "CSEddRepositoryImp",
+  "0x3c23320": "CSEddRepository",
+  "0x3c233d8": "CSEddResCap",
+  "0x3c23458": "EsdRepositoryImp",
+  "0x3c23468": "EsdRepository",
+  "0x3c23528": "EsdResCap",
+  "0x3c235a8": "CSEmkResMan",
+  "0x3c23628": "CSEmedfRepository",
+  "0x3c23698": "CSEmedfResCap",
+  "0x3c23718": "CSEmeldRepository",
+  "0x3c23788": "CSEmeldResCap",
+  "0x3c23808": "CSEmevdRepository",
+  "0x3c23878": "CSEmevdResCap",
+  "0x3c238f8": "FfxRepositoryImp",
+  "0x3c23908": "FfxRepository",
+  "0x3c239c8": "FfxResCap",
+  "0x3c23a48": "FfxreslistRepositoryImp",
+  "0x3c23a58": "FfxreslistRepository",
+  "0x3c23b18": "FfxreslistResCap",
+  "0x3c23b98": "GfxRepositoryImp",
+  "0x3c23ba8": "GfxRepository",
+  "0x3c23c70": "GfxResCap",
+  "0x3c23cd8": "LuabndResCap",
+  "0x3c23d58": "LuaRepositoryImp",
+  "0x3c23d68": "LuaRepository",
+  "0x3c23e28": "LuaResCap",
+  "0x3c23ea8": "CSMapbndRepositoryImp",
+  "0x3c23eb8": "CSMapbndRepository",
+  "0x3c23f78": "CSMapbndResCap",
+  "0x3c23ff8": "PartsbndRepository",
+  "0x3c24068": "PartsbndResCap",
+  "0x3c240e8": "MpwRepository",
+  "0x3c240f8": "MpwRepositoryImp",
+  "0x3c241b8": "MpwResCap",
+  "0x3c24248": "MsbdebugRepositoryImp",
+  "0x3c24258": "MsbdebugRepository",
+  "0x3c24318": "MsbdebugResCap",
+  "0x3c24398": "MsbRepositoryImp",
+  "0x3c243a8": "MsbRepository",
+  "0x3c24468": "MsbResCap",
+  "0x3c244d8": "MspManImp",
+  "0x3c244e8": "MspMan",
+  "0x3c245b0": "MspResCap",
+  "0x3c24640": "CSMsbPointMan",
+  "0x3c274d0": "MsgTagMan",
+  "0x3c27548": "OnavRepositoryImp",
+  "0x3c27558": "OnavRepository",
+  "0x3c27618": "OnavResCap",
+  "0x3c27698": "CSEventFlagUsageParamManager",
+  "0x3c27718": "ParamRepositoryImp",
+  "0x3c27728": "ParamRepository",
+  "0x3c277e8": "ParamResCap",
+  "0x3c27cc0": "SystemParamRepositoryImp",
+  "0x3c27cd0": "SystemParamRepository",
+  "0x3c28890": "SoloParamRepositoryImp",
+  "0x3c288a0": "SoloParamRepository",
+  "0x3c289a0": "PartsRelationinfobndRepositoryImp",
+  "0x3c289b0": "PartsRelationinfobndRepository",
+  "0x3c28a68": "PartsRelationinfobndResCap",
+  "0x3c28ae8": "CsResMemStatistics",
+  "0x3c28b68": "CSRtasbndRepositoryImp",
+  "0x3c28b78": "CSRtasbndRepository",
+  "0x3c28c38": "CSRtasbndResCap",
+  "0x3c28cb8": "RumblebndRepository",
+  "0x3c28d28": "RumblebndResCap",
+  "0x3c28da8": "ScaleformTexRepository",
+  "0x3c28e28": "WavbndRepository",
+  "0x3c28e98": "WavbndResCap",
+  "0x3c28f18": "CSScaleformArabic",
+  "0x3c299d0": "CSScaleformImp",
+  "0x3c299e8": "CSScaleform",
+  "0x3c29ad0": "CSScaleformStep::THIS_CLASS",
+  "0x3c29ae0": "CSScaleformStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c29af0": "CSStepTask< CSScaleformStep >",
+  "0x3c29b00": "CSScaleformStep",
+  "0x3c29c68": "CSScaleformSwfPlayer",
+  "0x3c29cf8": "CSScaleformSystem",
+  "0x3c29e00": "CSScaleformValue",
+  "0x3c29e70": "CSFD4ModelSfxIns",
+  "0x3c29ed8": "CSFD4MultiSfxIns",
+  "0x3c29f50": "CSFD4SfxIns",
+  "0x3c29fb8": "CSFD4SingleSfxIns",
+  "0x3c2a028": "CSFD4TraceSfxIns",
+  "0x3c2a0b8": "CSSfx",
+  "0x3c2a138": "CSDebugBankPlayerMng",
+  "0x3c2a1a8": "CSFD4LocateSoundIns",
+  "0x3c2a298": "CSFD4SoundIns",
+  "0x3c2a308": "CSFD4SystemSoundIns",
+  "0x3c2a3b8": "CSSoundImp",
+  "0x3c2a3c8": "CSSound",
+  "0x3c2a4e0": "CSSoundStep::THIS_CLASS",
+  "0x3c2a4f0": "CSSoundStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2a500": "CSStepTask< CSSoundStep >",
+  "0x3c2a510": "CSSoundStep",
+  "0x3c2a670": "CSFD4MoWwisebankId",
+  "0x3c2a6d8": "CSFD4MoWwisebankIdProvider",
+  "0x3c2a770": "MoWwiseMan",
+  "0x3c2a780": "MoWwiseManImp",
+  "0x3c2a840": "CSFD4MobankinfoFileCap",
+  "0x3c2a8b0": "CSFD4MoWwisebankRepositoryImp",
+  "0x3c2a8c0": "CSFD4MoWwisebankRepository",
+  "0x3c2a978": "CSFD4MoWwisebankResCap",
+  "0x3c2a9f0": "CSFD4MoWwisebankResCapTask::THIS_CLASS",
+  "0x3c2aa00": "CSFD4MoWwisebankResCapTask::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2aa10": "CSStepTask< CSFD4MoWwisebankResCapTask >",
+  "0x3c2aa20": "CSFD4MoWwisebankResCapTask",
+  "0x3c2ab88": "MoAdditionalEventInfobndFileCap",
+  "0x3c2abf8": "CSAutoControlAPI",
+  "0x3c2ac68": "CSAutoControlLuaManager",
+  "0x3c2ace8": "CSBudgetMonitor",
+  "0x3c2ad58": "CSForceBudgetMonitor",
+  "0x3c2adf0": "CSSearchReporterQuery",
+  "0x3c2b008": "CSBugReportManager",
+  "0x3c2b078": "CSSearchDateQuery",
+  "0x3c2c1b0": "CSCheatEOS",
+  "0x3c2c328": "CSSystemStep::THIS_CLASS",
+  "0x3c2c338": "CSSystemStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2c348": "CSStepTask< CSSystemStep >",
+  "0x3c2c358": "CSSystemStep",
+  "0x3c2c4f8": "CSDbgDispStep::THIS_CLASS",
+  "0x3c2c508": "CSDbgDispStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2c518": "CSStepTask< CSDbgDispStep >",
+  "0x3c2c528": "CSDbgDispStep",
+  "0x3c2c698": "CSDevInfoNotifyStep::THIS_CLASS",
+  "0x3c2c6a8": "CSDevInfoNotifyStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2c6b8": "CSStepTask< CSDevInfoNotifyStep >",
+  "0x3c2c6c8": "CSDevInfoNotifyStep",
+  "0x3c2c870": "CSDbgIdName",
+  "0x3c2c8e0": "CSDbgIdNameStep::THIS_CLASS",
+  "0x3c2c8f0": "CSDbgIdNameStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2c900": "CSStepTask< CSDbgIdNameStep >",
+  "0x3c2c910": "CSDbgIdNameStep",
+  "0x3c2ca78": "CSDbgMenuStep::THIS_CLASS",
+  "0x3c2ca88": "CSDbgMenuStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2ca98": "CSStepTask< CSDbgMenuStep >",
+  "0x3c2caa8": "CSDbgMenuStep",
+  "0x3c2cc28": "CSPanic",
+  "0x3c2cca8": "DbgRemote",
+  "0x3c2cd20": "DbgRemoteStep::THIS_CLASS",
+  "0x3c2cd30": "DbgRemoteStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2cd40": "CSStepTask< DbgRemoteStep >",
+  "0x3c2cd50": "DbgRemoteStep",
+  "0x3c2cf48": "ActivityToolProbe",
+  "0x3c2cfc8": "MultiLauncherProbe",
+  "0x3c2d038": "PlayerWarpToolProbe",
+  "0x3c2d0b8": "ReqReloadRemoteProbe",
+  "0x3c2d138": "SoundEventCheckMan",
+  "0x3c2d1a8": "SoundEventCheckProbe",
+  "0x3c2d390": "CSDlc",
+  "0x3c2d408": "CSRegulationManager",
+  "0x3c2d490": "CSRegulationStep::THIS_CLASS",
+  "0x3c2d4a0": "CSRegulationStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x3c2d4b0": "CSStepTask<CSRegulationStep>",
+  "0x3c2d4c0": "CSRegulationStep",
+  "0x3c2d650": "EntityThumbnailMan",
+  "0x3c2d6b8": "EntityThumbnailProbe",
+  "0x3c2d738": "CSGxLoadBalancerHelper",
+  "0x3c2d7b8": "CSLoadBalancer",
+  "0x3c2d838": "CSMemLoadBalancer",
+  "0x442dfc0": "CSMemory",
+  "0x442e038": "CSMouseMan",
+  "0x442e0b8": "CSMovie",
+  "0x442e160": "CSMovieIns::THIS_CLASS",
+  "0x442e170": "CSMovieIns::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x442e180": "CSStepLocal< CSMovieIns >",
+  "0x442e190": "CSMovieIns",
+  "0x442e610": "CSPadStep::THIS_CLASS",
+  "0x442e620": "CSPadStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x442e630": "CSStepTask< CSPadStep >",
+  "0x442e640": "CSPadStep",
+  "0x442e7c0": "CSPerfMan",
+  "0x442e838": "CsPerformanceMarker",
+  "0x442e8b8": "CSPlaygo",
+  "0x442e930": "CSPlaygoWaitStabilizeSecondChunkBackread::THIS_CLASS",
+  "0x442e940": "CSPlaygoWaitStabilizeSecondChunkBackread::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x442e950": "CSStepLocal< CSPlaygoWaitStabilizeSecondChunkBackread >",
+  "0x442ea68": "CSPrefetchForSlowStorageStep::THIS_CLASS",
+  "0x442ea78": "CSPrefetchForSlowStorageStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x442ea88": "CSStepLocal< CSPrefetchForSlowStorageStep >",
+  "0x442ea98": "CSPrefetchForSlowStorageStep",
+  "0x442ec10": "CSPlaylogSystem",
+  "0x442ec78": "CSPlaylogSystemSeed",
+  "0x442ecf0": "CSStepTask< CSPlaylogSystemStep >",
+  "0x442ed00": "CSPlaylogSystemStep",
+  "0x442ed10": "CSPlaylogSystemStep::THIS_CLASS",
+  "0x442ed20": "CSPlaylogSystemStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x442ee80": "CSPlaylogData",
+  "0x442f218": "CSSystemProperties",
+  "0x442f298": "CSPS5Activity",
+  "0x442f340": "CSHamariSimulateChrIns",
+  "0x442f408": "CSReportSystem",
+  "0x442f480": "CSReportSystemStep::THIS_CLASS",
+  "0x442f490": "CSReportSystemStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x442f4a0": "CSStepTask< CSReportSystemStep >",
+  "0x442f4b0": "CSReportSystemStep",
+  "0x442f618": "CSLogCollectAppender",
+  "0x442f698": "MsgCheckReport",
+  "0x442f708": "CSPositionRepUnit",
+  "0x442f978": "CSTrophy",
+  "0x442f9f8": "UserConfig",
+  "0x442fa78": "UserMan",
+  "0x442fb20": "CSRefWatcherCollector",
+  "0x442fba0": "CSDelayDeleteMan",
+  "0x442fc10": "CSDelayDeleteStep::THIS_CLASS",
+  "0x442fc20": "CSDelayDeleteStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x442fc30": "CSStepTask< CSDelayDeleteStep >",
+  "0x442fc40": "CSDelayDeleteStep",
+  "0x442fda0": "CSEzSelectItem",
+  "0x442fe08": "CSEzSelectTextCommentItem",
+  "0x442fe88": "CSEzWorkPool",
+  "0x442ff08": "CSFlipper",
+  "0x442ff88": "CSLuaConsoleServer",
+  "0x4430030": "CSVideoCapture",
+  "0x44301a0": "CSScreenModeCtrl::THIS_CLASS",
+  "0x44301b0": "CSScreenModeCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x44301c0": "CSStepLocal< CSScreenModeCtrl >",
+  "0x44301d0": "CSScreenModeCtrl",
+  "0x4433998": "CSWindow",
+  "0x4433a28": "CSResidentTalkFileMan",
+  "0x4433aa8": "CSScenarioPlacementManager",
+  "0x4433b20": "CSTalkDynamicChrCtrl::THIS_CLASS",
+  "0x4433b30": "CSTalkDynamicChrCtrl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x4433c00": "CSEventControlEzState::THIS_CLASS",
+  "0x4433c10": "CSEventControlEzState::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x4433c20": "CSStepLocal<CSEventControlEzState>",
+  "0x4433c30": "CSEventControlEzState",
+  "0x4433e00": "CSWorldTalkMan",
+  "0x4433e70": "CSDummyStep::THIS_CLASS",
+  "0x4433e80": "CSDummyStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x4433e90": "CSStepTask< CSDummyStep >",
+  "0x4433ea0": "CSDummyStep",
+  "0x4434018": "CSTask",
+  "0x4434098": "CSTaskGroup",
+  "0x4698598": "GXGUIRenderToTexture",
+  "0x4698638": "GUIButtonCutomColor",
+  "0x46987c8": "GXGUITexture",
+  "0x4698ca8": "GXShadowMapGUITextureProxy",
+  "0x4699290": "GXGUITexture_Tex2DPtr",
+  "0x46992a0": "GXGUITexture_Tex3DPtr",
+  "0x46992b0": "GXGUITexture_TexCubePtr",
+  "0x46992c0": "GXGUITexture_RenderTarget2DPtr",
+  "0x46992d0": "GXGUITexture_DepthStencilBufferPtr",
+  "0x4699498": "GXInterpParamIdListView::IdListView",
+  "0x46995e0": "GXParamLayerListView::LayerListView",
+  "0x4699fe8": "GXFFX::GXFfxRadarView",
+  "0x4699ff8": "_Radar",
+  "0x469a008": "_RadarTweaker",
+  "0x469a210": "GXFfxListViewBase",
+  "0x469a278": "GXFFX::GXFfxGUILabelWidget",
+  "0x469a2e8": "GXFFX::GXFfxGUIGraphWidget",
+  "0x469a358": "GXFFX::GXFfxTweakerMaker::LabelTweaker",
+  "0x469a368": "GXFFX::GXFfxTweakerMaker::GraphTweaker",
+  "0x469a430": "GUIWindowBase",
+  "0x469a498": "GUIWidget",
+  "0x469a508": "GUITweakerDialog",
+  "0x469a598": "GUIObject",
+  "0x469a608": "GUIRangeDataBase",
+  "0x469a678": "GUITweakerBase",
+  "0x469a6e8": "GUIRangeTweaker",
+  "0x469a758": "GUIRangeTweakWidget",
+  "0x469a7c8": "GUIOnOffTweaker",
+  "0x469a838": "GUIMsgReceiver",
+  "0x469a8a8": "GUICallbackObjectBase",
+  "0x469a918": "GUITweakerItem",
+  "0x469a928": "GUITweakerGroupItem",
+  "0x469a9f0": "GUIPropertyLabel",
+  "0x469aa58": "GUITriggerTweaker",
+  "0x469aac8": "GUIListView",
+  "0x469ab38": "GUIListViewItem",
+  "0x469ab48": "GUIListViewItemHost",
+  "0x469ac10": "GUIComboTweaker",
+  "0x469ac78": "GUIEditBox",
+  "0x469ad00": "GUIPopupMenu",
+  "0x469ad68": "GUIPopupMenuNode",
+  "0x469add8": "GUIMultiTweaker",
+  "0x469ae48": "GUIMultiNumericEditor",
+  "0x469aeb8": "GUIColorTweaker",
+  "0x469af28": "GUITextureViewer",
+  "0x469af98": "GUIButtonBase",
+  "0x469b008": "GUIButton",
+  "0x469b078": "GUITriggerTweakWidget",
+  "0x469b0e8": "GUIHeapList",
+  "0x469b158": "GUITextureBase",
+  "0x469b1c8": "GUITextureList",
+  "0x469b238": "GUIAutoVLayoutScroll",
+  "0x469b398": "GUIScrollBarUtil",
+  "0x469b408": "GUITweakerGroup",
+  "0x469b478": "GUISlider",
+  "0x469b4e8": "GUINumericEditBox",
+  "0x469b558": "GUICheckBox",
+  "0x469b5c8": "GUIYawPitchTweaker",
+  "0x469b638": "GUIComboTweakWidget",
+  "0x469b6a8": "GUIComboBox",
+  "0x469b718": "GUITextEditorUtil",
+  "0x469b788": "GUITimer",
+  "0x469b7f8": "GUIFont",
+  "0x469b868": "GUIPopupMenuString",
+  "0x469b8d8": "GUIPopupMenuSeparator",
+  "0x469b948": "GUIColorSelector",
+  "0x469b9b8": "GUIAutoVLayout",
+  "0x469ba28": "GUIYawPitchControl",
+  "0x469ba98": "GUIListBox",
+  "0x469bb08": "GUIDropDownList",
+  "0x469bb78": "GUILayouter",
+  "0x469bbe8": "GUIVertLayouter",
+  "0x469bc58": "GUILayoutItem",
+  "0x469bcc8": "GUIListBoxItem",
+  "0x469bd38": "GUILayoutItem_Window",
+  "0x46ea388": "DLForegroundStrategy",
+  "0x46ea398": "DLPollingStrategy",
+  "0x46ea3a8": "DLAsyncPollingStrategy",
+  "0x46eaf18": "DLCategory",
+  "0x46eb440": "DLAppender",
+  "0x46eb4a8": "DLFileAppender",
+  "0x46eb520": "DLUserInputPressDetectorSetting",
+  "0x46eb588": "DLUserInputSuppressorSetting",
+  "0x46eb5f8": "DLUserInputHoldDetectorSetting",
+  "0x46eb668": "DLUserInputRepeatDetectorSetting",
+  "0x46eb6d8": "DLPatternLayout",
+  "0x46eb898": "DLWriterAppender",
+  "0x46eb908": "DLLayout",
+  "0x46eda98": "DLLoggingStrategy",
+  "0x46edaa8": "DLCategoryRepository",
+  "0x46edb70": "DLConsoleAppender",
+  "0x46edbd8": "DLStdOutAppender",
+  "0x46edc48": "DLFastAppender",
+  "0x46edcb8": "DLSimpleLayout",
+  "0x46edd30": "DLConditionalAppender",
+  "0x46edd98": "DLBackgroundStrategy",
+  "0x46ede08": "DLHierarchy",
+  "0x46edf98": "DLUserInputADConverterSetting",
+  "0x46ee008": "DLUserInputPhysicalAnalogModifierSetting",
+  "0x46ee018": "DLUserInputVirtualAnalogModifierSetting",
+  "0x46ee0d8": "DLUserInputDAConverterSetting",
+  "0x46ee148": "DLUserInputDirectConverterSetting",
+  "0x46ee2d0": "UserInputExtension",
+  "0x46ee2e0": "UserInputExtensionSetting",
+  "0x46ee3a0": "DLUserInputPressDetector",
+  "0x46ee408": "DLUserInputSuppressor",
+  "0x46ee478": "DLUserInputHoldDetector",
+  "0x46ee4e8": "DLUserInputRepeatDetector",
+  "0x46eebc0": "DLLogCondition",
+  "0x46eebd0": "FilterByID",
+  "0x46eec88": "DLUserInputADConverter",
+  "0x46eecf8": "DLUserInputVirtualAnalogModifier",
+  "0x46eed08": "DLUserInputPhysicalAnalogModifier",
+  "0x46eedc8": "DLUserInputDAConverter",
+  "0x46eee38": "DLUserInputDirectConverter",
+  "0x46eeea8": "DLUserInputDeviceRumbleInterface",
+  "0x46eef60": "DLLG2Appender",
+  "0x46eefc8": "DLLG2Layout",
+  "0x46ef050": "DLUserInputDeviceOutputInterface",
+  "0x46ef0b8": "DLLG2SimpleLayout",
+  "0x46ef130": "DLLuaDetailUsing",
+  "0x46ef140": "DLLuaCoroutineUsing",
+  "0x46ef150": "DLLuaMainThreadUsing",
+  "0x46ef160": "DLLuaThreadUsing",
+  "0x46ef3b8": "DLScriptEngine",
+  "0x46fffc0": "DLUserInputDeviceRumbleInterfaceSteam",
+  "0x4706e90": "FD4DebugMenuManager",
+  "0x4706eb0": "FD4ComponentBase",
+  "0x47071c0": "FD4ResCapHolderItemSeed",
+  "0x47071d0": "FD4ResCapSeed",
+  "0x47071e0": "FD4FileCapSeed",
+  "0x47071f0": "FD4FileRepository",
+  "0x4707200": "FD4FileManagerImp",
+  "0x4707218": "FD4ParamdefFileCapSeed",
+  "0x4707228": "FD4ParamdefFileCap",
+  "0x4707238": "FD4TextlistFileCapSeed",
+  "0x4707248": "FD4TextlistFileCap",
+  "0x4707258": "FD4ResCap",
+  "0x4707268": "FD4FileRepositorySeed",
+  "0x4707278": "FD4FileManagerSeed",
+  "0x4707288": "FD4ComponentAttachSystemSeed",
+  "0x47072a0": "FD4TaskManager",
+  "0x47072b0": "FD4StepTemplateInterface<FD4::FD4SlotInstanceBase>",
+  "0x47072b8": "FD4StepTemplateInterface<FD4StepBaseInterface>",
+  "0x47072c0": "FD4StepTemplateInterface<FD4TaskBase>",
+  "0x47072d0": "FD4FileCap",
+  "0x47072e0": "FD4FileLoadProcess",
+  "0x47072f0": "FD4MountDeviceCapSeed",
+  "0x4707300": "FD4BndMountDeviceCap",
+  "0x4707310": "FD4BndMountDeviceCapSeed",
+  "0x4707320": "FD4BndMultiMountDeviceCap",
+  "0x4707330": "FD4BndMultiMountDeviceCapSeed",
+  "0x4707340": "FD4HkClothClm2RepositoryImp",
+  "0x4707348": "FD4HkClothClm2Repository",
+  "0x4707360": "FD4HkClothDataRepositoryImp",
+  "0x4707368": "FD4HkClothDataRepository",
+  "0x4707380": "FD4FileLoadProcessor_Default",
+  "0x4707390": "FD4FileDevpatchStep::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x4707398": "FD4FileDevpatchStep::THIS_CLASS",
+  "0x47073a0": "FD4FileLoadProcessor_Devpatch",
+  "0x47073b0": "FD4FileDevpatchRepository",
+  "0x47073c0": "FD4ParamdefRepository",
+  "0x47073c8": "FD4ParamdefRepositoryImplement",
+  "0x47073e0": "FD4ParamFileCapSeed",
+  "0x47073f0": "FD4ParamFileCap",
+  "0x4707400": "FD4FileLoadProcessor",
+  "0x4707410": "FD4FileLoadProcessor_CustomResourceBase",
+  "0x4707d58": "FD4PadManager",
+  "0x4707d68": "FD4StepBaseInterface",
+  "0x4707d78": "FD4ResCapHolderSeed",
+  "0x4707d88": "FD4ResCapHashHolderSeed",
+  "0x4707d98": "FD4ResRepSeed",
+  "0x4707da8": "FD4ResRep",
+  "0x4707db8": "FD4EzDrawState",
+  "0x4707dd0": "FD4HkClothManager",
+  "0x4707de8": "FD4HkClothCollidableDataRepository",
+  "0x4707df0": "FD4HkClothCollidableDataRepositoryImp",
+  "0x4707e08": "FD4RemoManager",
+  "0x4707e28": "FD4MqbRepository",
+  "0x4707e30": "FD4MqbRepositoryImp",
+  "0x4707e48": "FD4MqbRepositorySeed",
+  "0x4707e58": "FD4RemoHkxRepository",
+  "0x4707e60": "FD4RemoHkxRepositoryImp",
+  "0x4707e78": "FD4RemoHkxRepositorySeed",
+  "0x4707e88": "FD4FontManager",
+  "0x4707ea0": "FD4RemoteUserInputSystem",
+  "0x4707eb8": "FD4HkEzDrawState",
+  "0x4707ec8": "FD4EzDrawManager",
+  "0x4707ee0": "FD4HkEzDrawRigidBodyDispBufferManager",
+  "0x4707ef8": "FD4ResManagerSeed",
+  "0x4707f10": "FD4ResManagerImp",
+  "0x4707f20": "FD4HkClothClm2RepositorySeed",
+  "0x4707f30": "FD4HkClothDataRepositorySeed",
+  "0x4707f40": "FD4HkClothCollidableDataRepositorySeed",
+  "0x4707f50": "FD4ParamtdfResCap",
+  "0x4707f60": "FD4ParameterManager",
+  "0x4707f78": "FD4ParamNametdfRepository",
+  "0x4707f88": "FD4ParamNametdfRepositoryImplement",
+  "0x4707fa0": "FD4ParamRepository",
+  "0x4707fa8": "FD4ParamRepositoryImp",
+  "0x4707fb8": "FD4ParamResCap",
+  "0x4707fc8": "FD4JsonTypeString",
+  "0x4707fd8": "FD4SearchQueryContainer",
+  "0x4707fe8": "FD4SearchQuery",
+  "0x4707ff8": "FD4SearchValueQueryWithMatch",
+  "0x4708008": "FD4ReportSystem",
+  "0x4708020": "FD4JsonTypeBoolean",
+  "0x4708030": "FD4JsonTypeNumeric",
+  "0x4708040": "FD4RepData",
+  "0x4708058": "FD4AssertManager",
+  "0x4708068": "FD4LoggerManager",
+  "0x4708080": "FD4PerformanceManager",
+  "0x47080a0": "FD4DevConnectManager",
+  "0x47080b8": "FD4DevConnectManagerImplement",
+  "0x47080d0": "FD4DebugMenuShareStringManager",
+  "0x47080e0": "FD4HttpMan",
+  "0x47080f8": "FD4RepArray",
+  "0x4708100": "FD4DevConnectServerService",
+  "0x4708110": "FD4DevConnectReceivingMessage",
+  "0x4708120": "FD4DevConnectSendingMessage",
+  "0x4708130": "FD4PerfManager",
+  "0x4708150": "FD4TextRepUnit",
+  "0x4708160": "FD4RepUnit",
+  "0x4708170": "FD4PosRepUnit",
+  "0x4708188": "FD4TemplateRepUnit<dl_float32>",
+  "0x4708190": "FD4TemplateRepUnit<dl_float64>",
+  "0x4708198": "FD4TemplateRepUnit<dl_uint64>",
+  "0x47081a0": "FD4TemplateRepUnit<dl_uint32>",
+  "0x47081a8": "FD4TemplateRepUnit<dl_uint8>",
+  "0x47081b0": "FD4TemplateRepUnit<dl_uint16>",
+  "0x47081b8": "FD4TemplateRepUnit<dl_int64>",
+  "0x47081c0": "FD4TemplateRepUnit<dl_int32>",
+  "0x47081c8": "FD4TemplateRepUnit<dl_int8>",
+  "0x47081d0": "FD4TemplateRepUnit<dl_int16>",
+  "0x47081d8": "FD4TemplateRepUnit<dl_bool>",
+  "0x47081e8": "FD4DelayDeleteManager",
+  "0x4708208": "FD4EzDrawCommandBuffer",
+  "0x4708218": "FD4ResCapHolder",
+  "0x4708228": "FD4PrefetchFileCap",
+  "0x4708238": "FD4RemountPrefetchFileCap",
+  "0x4708248": "FD4PrefetchFileCapSeed",
+  "0x4708258": "FD4RemountPrefetchFileCapSeed",
+  "0x4708268": "FD4FileRepositoryUpdateTask",
+  "0x4708278": "FD4FileDevpatchRepositorySeed",
+  "0x4708280": "FD4ResCapHolderItem",
+  "0x4708290": "FD4StepAttachComponentBase",
+  "0x47082a0": "FD4StepAttachConditionHolder",
+  "0x47082b0": "FD4MountDeviceCap",
+  "0x47082c0": "FD4HkClothClm2ResCap",
+  "0x47082d0": "FD4HkClothClm2ResCapSeed",
+  "0x47082e0": "FD4HkClothDataResCap",
+  "0x47082f0": "FD4HkClothDataResCapSeed",
+  "0x4708300": "FD4FileDevpatchResCap",
+  "0x4708310": "FD4ParamdefResCap",
+  "0x4708320": "FD4ParamdefResCapSeed",
+  "0x4708328": "FD4PriorityModeratorSeed",
+  "0x4708348": "LuaConsoleManager",
+  "0x4708358": "FD4HkClothCollidableDataResCap",
+  "0x4708368": "FD4HkClothCollidableDataResCapSeed",
+  "0x4708378": "RemoPlayerImpl::FD4STEPTEMPLATEBASE_CHILD_CLASS",
+  "0x4708380": "RemoPlayerImpl::THIS_CLASS",
+  "0x4708388": "FD4MqbResCap",
+  "0x4708398": "FD4MqbResCapSeed",
+  "0x47083a8": "FD4RemoHkxResCap",
+  "0x47083b8": "FD4RemoHkxResCapSeed",
+  "0x47083c8": "FD4HkEzDrawCommandBuffer",
+  "0x47083d8": "FD4RepPathRepositorySeed",
+  "0x47083e8": "FD4RepositoryRepositorySeed",
+  "0x47083f8": "FD4RepositoryRepository",
+  "0x4708408": "FD4RepPathRepository",
+  "0x4708418": "FD4ParamtdfResCapSeed",
+  "0x4708428": "FD4ParamtdfRepositoryImplement",
+  "0x4708430": "FD4ParamtdfRepository",
+  "0x4708440": "FD4ParamRepositorySeed",
+  "0x4708450": "FD4ParamdefRepositorySeed",
+  "0x4708458": "FD4ParamtdfRepositorySeed",
+  "0x4708468": "FD4ParamNametdfRepositorySeed",
+  "0x4708478": "FD4ParamResCapSeed",
+  "0x4708488": "FD4LogReportAppender",
+  "0x4708498": "FD4AssertConsoleAppender",
+  "0x47084a0": "FD4DevConnectService",
+  "0x47084b0": "FD4DebugMenuReportSystem",
+  "0x47084b8": "FD4ResTask",
+  "0x47084c8": "FD4StepAttachCondition",
+  "0x47084d8": "FD4RepositoryCap",
+  "0x47084e8": "FD4RepositoryCapSeed",
+  "0x47084f8": "FD4RepPathResCap",
+  "0x4708508": "FD4RepPathResCapSeed",
+  "0x4708518": "FD4AssertLayout",
+  "0x4708528": "FD4Binder4PatchedEntry_Name",
+  "0x4708538": "FD4Binder4PatchedEntry_Id",
+  "0x4708548": "FD4Tpf003PatchedEntry",
+  "0x4708550": "FD4Binder4PatchedEntry_BhdName",
+  "0x4708560": "FD4Binder4PatchedEntry"
+ },
+ "er_aob_templates": {
+  "GameDataManAoB": {
+   "pattern": "48 8B 05 ? ? ? ? 48 85 C0 74 05 48 8B 40 58 C3 C3",
+   "hits": [],
+   "n": 0
+  },
+  "GameDataMan_mapper": {
+   "pattern": "48 89 05 ? ? ? ? 48 83 C4 38 E9",
+   "hits": [],
+   "n": 0
+  },
+  "GameManAoB": {
+   "pattern": "48 8B 05 ? ? ? ? 80 B8 ? ? ? ? 0D 0F 94 C0 C3",
+   "hits": [
+    "0x6ae7b0"
+   ],
+   "n": 1
+  },
+  "SoloParamRepositoryAoB": {
+   "pattern": "48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? 45 33 C0 BA 8E 00 00 00",
+   "hits": [],
+   "n": 0
+  },
+  "WorldChrManAoB": {
+   "pattern": "48 8B 05 ? ? ? ? 48 85 C0 74 0F 48 39 88",
+   "hits": [],
+   "n": 0
+  },
+  "CSFD4VirtualMemoryFlagAoB": {
+   "pattern": "48 8B 3D ? ? ? ? 48 85 FF 74 ? 48 8B 49",
+   "hits": [],
+   "n": 0
+  },
+  "IsEventCallAoB": {
+   "pattern": "48 83 EC 28 8B 12 85 D2",
+   "hits": [],
+   "n": 0
+  },
+  "SetEventCallAoB": {
+   "pattern": "48 89 74 24 18 57 48 83 EC 30 48 8B DA 41 0F B6 F8 8B 12 48 8B F1 85 D2 0F 84 ? ? ? ? 45 84 C0",
+   "hits": [],
+   "n": 0
+  },
+  "ItemGiveAoB(8B 02 83 F8 0A)": {
+   "pattern": "8B 02 83 F8 0A",
+   "hits": [],
+   "n": 0
+  },
+  "MapItemManAoB": {
+   "pattern": "48 8B 0D ? ? ? ? C7 44 24 50 FF FF FF FF C7 45 A0 FF FF FF FF 48 85 C9 75 2E",
+   "hits": [],
+   "n": 0
+  },
+  "ItemGib_prologue_6C24": {
+   "pattern": "40 55 56 57 41 54 41 55 41 56 41 57 48 8D 6C 24",
+   "hits": [
+    "0x1dbe4f0",
+    "0x1dbffc0"
+   ],
+   "n": 2
+  },
+  "ItemGib_prologue_AC24": {
+   "pattern": "40 55 56 57 41 54 41 55 41 56 41 57 48 8D AC 24",
+   "hits": [
+    "0x1efb240"
+   ],
+   "n": 1
+  },
+  "RemoveItemAoB": {
+   "pattern": "? 83 EC ? 8B F2 ? 8B E9 ? 85 C0 74",
+   "hits": [],
+   "n": 0
+  },
+  "CSLuaEventManagerAoB": {
+   "pattern": "48 83 3D ? ? ? ? 00 48 8B F9 0F 84 ? ? ? ? 48",
+   "hits": [
+    "0x5ced06"
+   ],
+   "n": 1
+  },
+  "MsgRepositoryImpAoB": {
+   "pattern": "48 8B 3D ? ? ? ? 44 0F B6 30 48 85 FF 75",
+   "hits": [],
+   "n": 0
+  },
+  "ChrDebugFlagsAoB": {
+   "pattern": "80 3D ? ? ? ? 00 0F 85 ? ? ? ? 32 C0 48",
+   "hits": [],
+   "n": 0
+  },
+  "cs_menu_man_imp_display_status_message": {
+   "pattern": "BA D0 07 00 00 48 83 C4 28 E9",
+   "hits": [],
+   "n": 0
+  }
+ },
+ "game_data_man": {
+  "creation_pattern_hits": [
+   {
+    "site": "0x1fd5e5",
+    "alloc_size": 1112,
+    "static": "0x3c078d0",
+    "ctor": "0x1fa740",
+    "n_refs": 979
+   }
+  ],
+  "method_name_strings": {
+   "CS::GameDataMan::OnGameClear": [
+    "0x200320"
+   ],
+   "CS::GameDataMan::OnMoveMapInitialize": [
+    "0x200480"
+   ],
+   "CS::GameDataMan::UpdatePlayPhase": [
+    "0x203250"
+   ],
+   "CS::GameDataMan::UpdateStatisticsData": [
+    "0x2034f0"
+   ],
+   "CS::GameDataMan::Reset_forEnterLobby": [
+    "0x201040"
+   ],
+   "CS::GameDataMan::Reset_forEnterIngameTutorial": [
+    "0x200af0"
+   ]
+  },
+  "tu_region": [
+   "0x1f8320",
+   "0x20b4f0"
+  ],
+  "top_data_refs_from_tu": [
+   {
+    "static": "0x3c078d0",
+    "refs_from_tu": 412,
+    "total_refs": 979,
+    "ops": {
+     "488b05": 747,
+     "488b0d": 160,
+     "488b15": 36
+    }
+   },
+   {
+    "static": "0x3c2d9c0",
+    "refs_from_tu": 80,
+    "total_refs": 1887,
+    "ops": {
+     "4c8b05": 902,
+     "488b1d": 358,
+     "488b0d": 290
+    }
+   },
+   {
+    "static": "0x3c071cc",
+    "refs_from_tu": 39,
+    "total_refs": 136,
+    "ops": {
+     "488d0d": 135,
+     "488d05": 1
+    }
+   },
+   {
+    "static": "0x3ae5f68",
+    "refs_from_tu": 32,
+    "total_refs": 7983,
+    "ops": {
+     "488b05": "0x1f15",
+     "4c8b05": 9,
+     "488b15": 6
+    }
+   },
+   {
+    "static": "0x3c078b5",
+    "refs_from_tu": 18,
+    "total_refs": 384,
+    "ops": {
+     "488d0d": 383,
+     "488d05": 1
+    }
+   },
+   {
+    "static": "0x46a935c",
+    "refs_from_tu": 12,
+    "total_refs": 9511,
+    "ops": {
+     "8b0d": "0x1b84",
+     "488d0d": 2414,
+     "488b0d": 36
+    }
+   }
+  ],
+  "static": "0x3c078d0",
+  "confidence": "CONFIRMED",
+  "evidence": "object allocated with size 0x458, constructed at 0x1fa740, stored to [rip+0x3c078d0] with `add rsp,28h; jmp` (same shape as ER mapper pattern `48 89 05 $ 48 83 c4 38 e9`); static is referenced 979 times (412 of them from the CS::GameDataMan::* translation unit); readers do `mov rax,[rax+8]` (main_player_game_data at +8 like ER)",
+  "reader_followups": [
+   [
+    "4885c07406488b4808eb02",
+    19
+   ],
+   [
+    "41b801000000488b034881",
+    11
+   ],
+   [
+    "488b48084885c975054533",
+    7
+   ],
+   [
+    "488b88a000000083a10412",
+    6
+   ],
+   [
+    "4885c07406488b4808eb03",
+    6
+   ],
+   [
+    "4885c07415488b48084885",
+    6
+   ]
+  ]
+ },
+ "ctor_static_candidates": {
+  "GameMan": [
+   {
+    "static": "0x3c13258",
+    "store_site": "0x6ae22a",
+    "ctor": "0x6a7c20",
+    "ctor_call_site": "0x6ae220",
+    "vftable": "0x2c325d8",
+    "matches_dlrf": null,
+    "total_refs": 376
+   }
+  ],
+  "PlayerGameData": [
+   {
+    "static": "0x3c078f8",
+    "store_site": "0x20b6ca",
+    "ctor": "0x2087c0",
+    "ctor_call_site": "0x20b6c4",
+    "vftable": "0x2be6e28",
+    "matches_dlrf": null,
+    "total_refs": 3
+   }
+  ],
+  "CSMenuManImp": [
+   {
+    "static": "0x3c149d8",
+    "store_site": "0xf34ca0",
+    "ctor": "0x7b3d10",
+    "ctor_call_site": "0xf34c9a",
+    "vftable": "0x2c3ad00",
+    "matches_dlrf": "CSMenuMan",
+    "total_refs": 884
+   },
+   {
+    "static": "0x442fa68",
+    "store_site": "0xf34cdb",
+    "ctor": "0x7b3d10",
+    "ctor_call_site": "0xf34c9a",
+    "vftable": "0x2c3ad00",
+    "matches_dlrf": "UserMan",
+    "total_refs": 18
+   }
+  ],
+  "EquipGameData": [],
+  "CSFD4VirtualMemoryFlag": [],
+  "CSRegulationManagerImp": [
+   {
+    "static": "0x3c2d400",
+    "store_site": "0xf4e4ad",
+    "ctor": "0xf4cdb0",
+    "ctor_call_site": "0xf4e4a3",
+    "vftable": "0x2cc44d8",
+    "matches_dlrf": "CSRegulationManager",
+    "total_refs": 33
+   }
+  ],
+  "SoloParamRepositoryImp": [],
+  "MsgRepositoryImp": [
+   {
+    "static": "0x3c246a8",
+    "store_site": "0xe2282b",
+    "ctor": "0xe5a640",
+    "ctor_call_site": "0xe2281e",
+    "vftable": "0x2ca9688",
+    "matches_dlrf": "MsgRepository",
+    "total_refs": 141
+   },
+   {
+    "static": "0x4707dc0",
+    "store_site": "0xe22840",
+    "ctor": "0xe5a640",
+    "ctor_call_site": "0xe2281e",
+    "vftable": "0x2ca9688",
+    "matches_dlrf": null,
+    "total_refs": 3
+   }
+  ],
+  "CSNetManImp": [
+   {
+    "static": "0x3c046a8",
+    "store_site": "0xf34e70",
+    "ctor": "0x1867b0",
+    "ctor_call_site": "0xf34e66",
+    "vftable": "0x2bda5d8",
+    "matches_dlrf": "CSNetMan",
+    "total_refs": 778
+   }
+  ],
+  "CSSystemPropertiesImp": [],
+  "CSFileImp": [
+   {
+    "static": "0x3c04a28",
+    "store_site": "0x19bca4",
+    "ctor": "0x193e90",
+    "ctor_call_site": "0x19bc9c",
+    "vftable": "0x2bdc638",
+    "matches_dlrf": "CSFile",
+    "total_refs": 1346
+   },
+   {
+    "static": "0x4707208",
+    "store_site": "0x19bcb9",
+    "ctor": "0x193e90",
+    "ctor_call_site": "0x19bc9c",
+    "vftable": "0x2bdc638",
+    "matches_dlrf": "FD4FileManager",
+    "total_refs": 41
+   }
+  ],
+  "CSEventFlagManImp": [],
+  "WorldChrManImp": [
+   {
+    "static": "0x3c0f0a8",
+    "store_site": "0xc2b0d2",
+    "ctor": "0x514e70",
+    "ctor_call_site": "0xc2b0c8",
+    "vftable": "0x2c1b930",
+    "matches_dlrf": "WorldChrMan",
+    "total_refs": 2974
+   },
+   {
+    "static": "0x46a1130",
+    "store_site": "0x517644",
+    "ctor": "0x516820",
+    "ctor_call_site": "0x51761f",
+    "vftable": "0x2c1b930",
+    "matches_dlrf": null,
+    "total_refs": 1
+   }
+  ],
+  "MapItemManImpl": [
+   {
+    "static": "0x3c10b68",
+    "store_site": "0xc2b08e",
+    "ctor": "0x56e5b0",
+    "ctor_call_site": "0xc2b084",
+    "vftable": "0x2c234c0",
+    "matches_dlrf": "MapItemMan",
+    "total_refs": 171
+   }
+  ],
+  "CSItemGetMenuManImpl": [],
+  "CSGaitemImp": [
+   {
+    "static": "0x3c131c8",
+    "store_site": "0xe2288b",
+    "ctor": "0x69ec30",
+    "ctor_call_site": "0xe22881",
+    "vftable": "0x2c32260",
+    "matches_dlrf": "CSGaitem",
+    "total_refs": 255
+   }
+  ],
+  "CSLuaEventManagerImp": []
+ },
+ "event_flag_functions": [
+  {
+   "rva": "0x60ce40",
+   "div_site": "0x60ce40",
+   "kind": "GetFlag",
+   "features": {
+    "size": 512,
+    "bts": 0,
+    "btr": 0,
+    "bt": 0,
+    "setne": 1,
+    "and7": 1,
+    "shr3": 1,
+    "mov_edx_7": 0,
+    "mov_ecx_7": 1,
+    "load_0x38": 2,
+    "load_0x28": 3,
+    "load_0x20": 5,
+    "has_pdata": false
+   },
+   "prologue": "448b411c448bda33d2418bc341f7f04c8bd14533c9440faf",
+   "callers": [
+    {
+     "root": "0x5e7260",
+     "n_calls": 1,
+     "size": 72,
+     "statics": [],
+     "prologue": "48895c2408574883ec20833a00488bda488bf974264881c1f0010000e8ffa1ff"
+    },
+    {
+     "root": "0x5e7570",
+     "n_calls": 1,
+     "size": 174,
+     "statics": [],
+     "prologue": "4585c00f84a400000048895c2408488974241048897c242041564883ec30418b"
+    },
+    {
+     "root": "0x5e7740",
+     "n_calls": 1,
+     "size": 472,
+     "statics": [
+      "CSEventFlagUsageParamManager"
+     ],
+     "prologue": "48895c241848897424205557415441564157488bec4883ec60488bf1e8ff5102"
+    },
+    {
+     "root": "0x5e79f0",
+     "n_calls": 1,
+     "size": 288,
+     "statics": [
+      "CSEventFlagUsageParamManager"
+     ],
+     "prologue": "48895c24205556574883ec30833a00498be9410fb6f8488bda488bf10f84f100"
+    }
+   ]
+  },
+  {
+   "rva": "0x60d0d0",
+   "div_site": "0x60d0e6",
+   "kind": null,
+   "features": {
+    "size": 104,
+    "bts": 0,
+    "btr": 0,
+    "bt": 0,
+    "setne": 0,
+    "and7": 0,
+    "shr3": 0,
+    "mov_edx_7": 0,
+    "mov_ecx_7": 0,
+    "load_0x38": 0,
+    "load_0x28": 0,
+    "load_0x20": 0,
+    "has_pdata": true
+   },
+   "prologue": "48895c241848896c242056574155415641574883ec308b71",
+   "callers": []
+  },
+  {
+   "rva": "0x60d330",
+   "div_site": "0x60d335",
+   "kind": "SetFlag",
+   "features": {
+    "size": 179,
+    "bts": 1,
+    "btr": 1,
+    "bt": 0,
+    "setne": 0,
+    "and7": 1,
+    "shr3": 1,
+    "mov_edx_7": 1,
+    "mov_ecx_7": 0,
+    "load_0x38": 1,
+    "load_0x28": 0,
+    "load_0x20": 0,
+    "has_pdata": true
+   },
+   "prologue": "48895c2408448b491c448bd233d2418bc241f7f14c8bd941",
+   "callers": [
+    {
+     "root": "0x5e7740",
+     "n_calls": 1,
+     "size": 472,
+     "statics": [
+      "CSEventFlagUsageParamManager"
+     ],
+     "prologue": "48895c241848897424205557415441564157488bec4883ec60488bf1e8ff5102"
+    },
+    {
+     "root": "0x5e79f0",
+     "n_calls": 1,
+     "size": 288,
+     "statics": [
+      "CSEventFlagUsageParamManager"
+     ],
+     "prologue": "48895c24205556574883ec30833a00498be9410fb6f8488bda488bf10f84f100"
+    }
+   ]
+  },
+  {
+   "rva": "0x60d3f0",
+   "div_site": "0x60d400",
+   "kind": null,
+   "features": {
+    "size": 121,
+    "bts": 0,
+    "btr": 0,
+    "bt": 0,
+    "setne": 0,
+    "and7": 0,
+    "shr3": 0,
+    "mov_edx_7": 0,
+    "mov_ecx_7": 0,
+    "load_0x38": 0,
+    "load_0x28": 0,
+    "load_0x20": 0,
+    "has_pdata": true
+   },
+   "prologue": "48895c2418555657415641574883ec308b711c8bea33d28b",
+   "callers": []
+  },
+  {
+   "rva": "0x23fe2d5",
+   "div_site": "0x23fe2d5",
+   "kind": null,
+   "features": {
+    "size": 43,
+    "bts": 0,
+    "btr": 0,
+    "bt": 0,
+    "setne": 0,
+    "and7": 0,
+    "shr3": 0,
+    "mov_edx_7": 0,
+    "mov_ecx_7": 0,
+    "load_0x38": 0,
+    "load_0x28": 0,
+    "load_0x20": 0,
+    "has_pdata": false
+   },
+   "prologue": "448b411c41b90100000041f7f0c6413c01418bc189511066",
+   "callers": []
+  },
+  {
+   "rva": "0x25d1940",
+   "div_site": "0x25d197f",
+   "kind": null,
+   "features": {
+    "size": 278,
+    "bts": 0,
+    "btr": 0,
+    "bt": 0,
+    "setne": 0,
+    "and7": 0,
+    "shr3": 0,
+    "mov_edx_7": 0,
+    "mov_ecx_7": 0,
+    "load_0x38": 0,
+    "load_0x28": 0,
+    "load_0x20": 1,
+    "has_pdata": true
+   },
+   "prologue": "48895c241057b820000000e830fa0b00482be0448b512048",
+   "callers": [
+    {
+     "root": "0x25d1540",
+     "n_calls": 1,
+     "size": 281,
+     "statics": [],
+     "prologue": "405341564157b820000000e830fe0b0090e9650bf80448894dc7488d45c75648"
+    }
+   ]
+  }
+ ],
+ "cs_event_flag_man_static": "0x3c115a8",
+ "item_give": {
+  "named_functions": {
+   "CS::EquipGameData::AddInventoryEquip": {
+    "root": "0x1f0160",
+    "size": 1167,
+    "chunks": 1,
+    "statics": {
+     "GameDataMan": 5,
+     "CSEventFlagMan": 2,
+     "WorldChrMan": 1
+    },
+    "consts": {
+     "0x40000000": 2,
+     "0x80000000": 2,
+     "0x0FFFFFFF": 8,
+     "0xF0000000": 7
+    },
+    "n_callers": 47,
+    "n_jmp_thunks": 0,
+    "jmp_thunks": [],
+    "prologue": "48895c2410488974241848897c2420554154415541564157488d6c24d94881ec",
+    "calls": [
+     "0x1e2f40",
+     "0x1e3720",
+     "0x1e3b20",
+     "0x1e3e00",
+     "0x1f4170",
+     "0x1f49a0",
+     "0x1f4ff0",
+     "0x1f5470",
+     "0x1f62a0",
+     "0x1fc030",
+     "0x1fe1c0",
+     "0x4b2f30",
+     "0x5e79f0",
+     "0x5ec560",
+     "0x6a0d50",
+     "0x6a0dd0",
+     "0x6a1370",
+     "0x6d0210",
+     "0xe6c4d0",
+     "0xe8d840",
+     "0xea17e0",
+     "0xea7fc0",
+     "0xea9a60",
+     "0x214e1d0",
+     "0x2153380"
+    ]
+   },
+   "CS::EquipGameData::CheckAddItem_forDLC": {
+    "root": "0x1f0a90",
+    "size": 1794,
+    "chunks": 1,
+    "statics": {
+     "CSEventFlagMan": 2
+    },
+    "consts": {},
+    "n_callers": 0,
+    "n_jmp_thunks": 1,
+    "jmp_thunks": [
+     "0x209ee7"
+    ],
+    "prologue": "48895c24085556574883ec40488bf18b15eb06510465488b042558000000b938",
+    "calls": [
+     "0x1f05f0",
+     "0x1f5610",
+     "0x5e7260",
+     "0x5ec560",
+     "0x214e1d0",
+     "0x2153380",
+     "0x2690d64",
+     "0x2690ea4",
+     "0x2690f04"
+    ]
+   },
+   "CS::MapItemManImpl::_RequestRegistGetItem": {
+    "root": "0x581800",
+    "size": 791,
+    "chunks": 1,
+    "statics": {
+     "GameDataMan": 2,
+     "CSEventFlagMan": 2
+    },
+    "consts": {
+     "0x0FFFFFFF": 2,
+     "0x00FFFFFF": 1
+    },
+    "n_callers": 0,
+    "n_jmp_thunks": 3,
+    "jmp_thunks": [
+     "0x5769a0",
+     "0x5769b9",
+     "0x5769c9"
+    ],
+    "prologue": "48895c24185556574154415541564157488d6c24a04881ec60010000488b0545",
+    "calls": [
+     "0x18825c",
+     "0x20bb20",
+     "0x56a5b0",
+     "0x56ab40",
+     "0x56abb0",
+     "0x56abe0",
+     "0x56ad70",
+     "0x56e440",
+     "0x57ca60",
+     "0x582970",
+     "0x5e79f0",
+     "0x5ec560",
+     "0x6028d0",
+     "0x6a1bc0",
+     "0x6a1bd0",
+     "0x6a1be0",
+     "0x6aea70",
+     "0x6c1530",
+     "0x214e1d0",
+     "0x2153380",
+     "0x26909a0",
+     "0x2690a5c"
+    ]
+   },
+   "CS::MapItemManImpl::Limited_RequestRegistGetTalkItem": {
+    "root": "0x5732f0",
+    "size": 1445,
+    "chunks": 1,
+    "statics": {
+     "GameDataMan": 1,
+     "CSEventFlagMan": 2
+    },
+    "consts": {},
+    "n_callers": 1,
+    "n_jmp_thunks": 0,
+    "jmp_thunks": [],
+    "prologue": "48895c24205556574154415541564157488dac2490fdffff4881ec7003000048",
+    "calls": [
+     "0x1f4d80",
+     "0x20bb20",
+     "0x56a5b0",
+     "0x56ab40",
+     "0x56abb0",
+     "0x56ad70",
+     "0x57ca60",
+     "0x582970",
+     "0x5e79f0",
+     "0x5ec560",
+     "0x6028d0",
+     "0x6aea70",
+     "0x866c40",
+     "0x86aa50",
+     "0x8b9480",
+     "0x8f35e0",
+     "0x214e1d0",
+     "0x2153380",
+     "0x26909a0",
+     "0x26909ec",
+     "0x2690a5c",
+     "0x26912b8",
+     "0x26912f4"
+    ]
+   },
+   "CS::MapItemManImpl::_NotifyRemoveMapItem": {
+    "root": "0x57d400",
+    "size": 574,
+    "chunks": 1,
+    "statics": {
+     "CSEventFlagMan": 2
+    },
+    "consts": {
+     "0x40000000": 1
+    },
+    "n_callers": 8,
+    "n_jmp_thunks": 0,
+    "jmp_thunks": [],
+    "prologue": "48895c240848896c2410488974241857415641574883ec50410fb6f08bda488b",
+    "calls": [
+     "0x56d840",
+     "0x571dd0",
+     "0x580f70",
+     "0x582680",
+     "0x5e79f0",
+     "0x5ec560",
+     "0x6a1b50",
+     "0x6aea70",
+     "0x6af500",
+     "0xaed2d0",
+     "0x214e1d0",
+     "0x214f3e0",
+     "0x2153380"
+    ]
+   },
+   "CS::ItemLotUtil::_ResetCumulateNum": {
+    "root": "0x569330",
+    "size": 4072,
+    "chunks": 1,
+    "statics": {
+     "CSEventFlagMan": 4
+    },
+    "consts": {
+     "0x80000000": 1
+    },
+    "n_callers": 0,
+    "n_jmp_thunks": 1,
+    "jmp_thunks": [
+     "0x56abd6"
+    ],
+    "prologue": "488bc4488958208950105556574154415541564157488da8e8f9ffff4881ece0",
+    "calls": [
+     "0x117360",
+     "0x567fd0",
+     "0x568240",
+     "0x5682c0",
+     "0x56a320",
+     "0x56a3f0",
+     "0x56abe0",
+     "0x56adb0",
+     "0x56af10",
+     "0x56b010",
+     "0x56b190",
+     "0x56b410",
+     "0x56b690",
+     "0x56b810",
+     "0x56bb20",
+     "0x56bbe0",
+     "0x5e7260",
+     "0x5e79f0",
+     "0x5ec560",
+     "0x5ec580",
+     "0x6a4c00",
+     "0x6af4f0",
+     "0xe78d60",
+     "0xe79610",
+     "0xe79630",
+     "0xe79650",
+     "0xe79680",
+     "0xe79a50",
+     "0xe8f1d0",
+     "0xe8f290",
+     "0xe8f2c0",
+     "0xe8f2e0",
+     "0xe8f310",
+     "0xe8f3b0",
+     "0xe8f440",
+     "0xe8f4e0",
+     "0xe8f5e0",
+     "0xe8f6e0",
+     "0xe8f7c0",
+     "0xe8f850",
+     "0xe8fc40",
+     "0xe8fcd0",
+     "0xf561d0",
+     "0xf61390",
+     "0x214e1d0",
+     "0x214f3e0",
+     "0x2153380",
+     "0x26909a0",
+     "0x26909ec",
+     "0x2690a5c"
+    ]
+   },
+   "CS::ItemLotParam::Util_CanExecByEventFlag": {
+    "root": "0xe8fcd0",
+    "size": 580,
+    "chunks": 3,
+    "statics": {
+     "CSEventFlagMan": 4
+    },
+    "consts": {},
+    "n_callers": 2,
+    "n_jmp_thunks": 0,
+    "jmp_thunks": [],
+    "prologue": "48895c2418555641564883ec304c8b41084c8d35180317ff33db8bf2895c2450",
+    "calls": [
+     "0x5e7260",
+     "0x5ec560",
+     "0x214e1d0",
+     "0x2153380"
+    ]
+   },
+   "CS::MenuGaitemEnumerator::_Enumerate_ArchiveItems": {
+    "root": "0x8c0320",
+    "size": 2620,
+    "chunks": 1,
+    "statics": {
+     "CSEventFlagMan": 4,
+     "GameDataMan": 2
+    },
+    "consts": {
+     "0x0FFFFFFF": 5
+    },
+    "n_callers": 0,
+    "n_jmp_thunks": 0,
+    "jmp_thunks": [],
+    "prologue": "48895c2410488974241848897c2420554154415541564157488dac24e0f8ffff",
+    "calls": [
+     "0x1e2740",
+     "0x1e3430",
+     "0x1f4d80",
+     "0x5e7260",
+     "0x5ec560",
+     "0x7aa130",
+     "0x82b700",
+     "0x8b7820",
+     "0x8b99f0",
+     "0x8be7e0",
+     "0x8be950",
+     "0x8bef70",
+     "0x8c4620",
+     "0x8f35e0",
+     "0xe6a4c0",
+     "0xe6a800",
+     "0xe6c4d0",
+     "0xe8d5a0",
+     "0xe8d7e0",
+     "0xe8d9b0",
+     "0xea7760",
+     "0xea7e80",
+     "0xea8190",
+     "0xea9a60",
+     "0x214e1d0",
+     "0x214e8d0",
+     "0x214eaf0",
+     "0x2153380",
+     "0x2169630",
+     "0x26909a0"
+    ]
+   }
+  },
+  "path_RequestRegistGetItem_to_AddInventoryEquip": [
+   "0x581800",
+   "0x57ca60",
+   "0x57a0f0",
+   "0x1f0160"
+  ],
+  "intermediates": {
+   "0x57ca60": {
+    "size": 876,
+    "statics": {
+     "GameDataMan": 1,
+     "CSServerInterface": 4,
+     "WorldChrMan": 2
+    },
+    "consts": {},
+    "n_callers": 6,
+    "callers": [
+     "0x5732f0",
+     "0x575490",
+     "0x57c560",
+     "0x57e8f0",
+     "0x581800"
+    ],
+    "prologue": "40555356574154415541564157488d6c24f94881ece8000000488b05e89456034833c4488945ef4c"
+   },
+   "0x57a0f0": {
+    "size": 892,
+    "statics": {
+     "GameDataMan": 2,
+     "WorldChrMan": 2,
+     "CSFeMan": 1,
+     "CSServerInterface": 2
+    },
+    "consts": {
+     "0x40000000": 2,
+     "0x0FFFFFFF": 4,
+     "0xF0000000": 2
+    },
+    "n_callers": 1,
+    "callers": [
+     "0x57ca60"
+    ],
+    "prologue": "4c894c2420448844241848894c2408555356574154415541564157488bec4883ec68488bfa4c8bf9"
+   }
+  },
+  "prologue_aob_hits": [
+   {
+    "rva": "0x1dbe4f0",
+    "root": "0x1dbe4f0",
+    "size": 1193,
+    "chunks": 5,
+    "statics": {},
+    "consts": {},
+    "strings": []
+   },
+   {
+    "rva": "0x1dbffc0",
+    "root": "0x1dbffc0",
+    "size": 1406,
+    "chunks": 5,
+    "statics": {},
+    "consts": {},
+    "strings": []
+   },
+   {
+    "rva": "0x1efb240",
+    "root": "0x1efb240",
+    "size": 2182,
+    "chunks": 6,
+    "statics": {},
+    "consts": {},
+    "strings": []
+   }
+  ],
+  "AddInventoryEquip_callers": [
+   {
+    "root": "0x2057b0",
+    "n": 10,
+    "size": 3320,
+    "statics": [
+     "CSGaitem"
+    ]
+   },
+   {
+    "root": "0x7fa120",
+    "n": 6,
+    "size": 2757,
+    "statics": [
+     "CSGaitem",
+     "GameDataMan",
+     "WorldChrMan"
+    ]
+   },
+   {
+    "root": "0x1f1540",
+    "n": 5,
+    "size": 1243,
+    "statics": [
+     "CSGaitem"
+    ]
+   },
+   {
+    "root": "0x204a40",
+    "n": 4,
+    "size": 1088,
+    "statics": [
+     "CSGaitem"
+    ]
+   },
+   {
+    "root": "0x2054b0",
+    "n": 4,
+    "size": 765,
+    "statics": [
+     "CSGaitem"
+    ]
+   },
+   {
+    "root": "0x7f8f40",
+    "n": 4,
+    "size": 3245,
+    "statics": [
+     "CSGaitem",
+     "CSMenuMan",
+     "GameDataMan",
+     "MapItemMan",
+     "WorldChrMan"
+    ]
+   },
+   {
+    "root": "0x204e80",
+    "n": 3,
+    "size": 1582,
+    "statics": [
+     "CSGaitem"
+    ]
+   },
+   {
+    "root": "0x2046e0",
+    "n": 2,
+    "size": 863,
+    "statics": [
+     "CSGaitem"
+    ]
+   },
+   {
+    "root": "0x1f05f0",
+    "n": 1,
+    "size": 178,
+    "statics": [
+     "CSGaitem"
+    ]
+   },
+   {
+    "root": "0x1f3700",
+    "n": 1,
+    "size": 583,
+    "statics": []
+   },
+   {
+    "root": "0x1fd620",
+    "n": 1,
+    "size": 1164,
+    "statics": [
+     "CSGaitem",
+     "GameDataMan"
+    ]
+   },
+   {
+    "root": "0x1fdab0",
+    "n": 1,
+    "size": 509,
+    "statics": [
+     "CSGaitem",
+     "GameDataMan"
+    ]
+   }
+  ],
+  "scored_candidates": [
+   {
+    "score": 8,
+    "root": "0xfdee30",
+    "size": 20408,
+    "statics": [
+     "CSItemGetMenuMan",
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 1,
+     "0x0FFFFFFF": 2,
+     "cmp eax,0Ah": 1
+    },
+    "strings": [
+     "MsgRepository"
+    ]
+   },
+   {
+    "score": 7,
+    "root": "0x1f0160",
+    "size": 1167,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 2,
+     "0x80000000": 2,
+     "0x0FFFFFFF": 8,
+     "0xF0000000": 7
+    },
+    "strings": [
+     "CS::EquipGameData::AddInventoryEquip"
+    ]
+   },
+   {
+    "score": 7,
+    "root": "0x1fd620",
+    "size": 1164,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 2,
+     "0x80000000": 1,
+     "0x0FFFFFFF": 4,
+     "0xF0000000": 3
+    },
+    "strings": [
+     "Tried to create container with incompatible heap."
+    ]
+   },
+   {
+    "score": 7,
+    "root": "0x7f8f40",
+    "size": 3245,
+    "statics": [
+     "GameDataMan",
+     "MapItemMan"
+    ],
+    "consts": {
+     "0x40000000": 2,
+     "0x0FFFFFFF": 6,
+     "0xF0000000": 2
+    },
+    "strings": []
+   },
+   {
+    "score": 7,
+    "root": "0xc35830",
+    "size": 4101,
+    "statics": [
+     "MapItemMan"
+    ],
+    "consts": {
+     "0x40000000": 2,
+     "0x80000000": 2,
+     "0x0FFFFFFF": 1
+    },
+    "strings": [
+     "CSFile",
+     "CSFile"
+    ]
+   },
+   {
+    "score": 7,
+    "root": "0xdcdc60",
+    "size": 2487,
+    "statics": [
+     "MapItemMan"
+    ],
+    "consts": {
+     "0x40000000": 2,
+     "0x80000000": 3,
+     "0x10000000": 1,
+     "0x20000000": 2,
+     "0x0FFFFFFF": 1
+    },
+    "strings": []
+   },
+   {
+    "score": 6,
+    "root": "0x1f6e70",
+    "size": 470,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 3,
+     "0x80000000": 4,
+     "0x0FFFFFFF": 1
+    },
+    "strings": []
+   },
+   {
+    "score": 6,
+    "root": "0x575b90",
+    "size": 1399,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 1,
+     "0x80000000": 2,
+     "0x10000000": 1,
+     "0x0FFFFFFF": 1,
+     "0x00FFFFFF": 1
+    },
+    "strings": []
+   },
+   {
+    "score": 6,
+    "root": "0x583660",
+    "size": 1264,
+    "statics": [
+     "CSItemGetMenuMan"
+    ],
+    "consts": {
+     "0x40000000": 1,
+     "0x0FFFFFFF": 6,
+     "0xF0000000": 2
+    },
+    "strings": [
+     "Not a valid iterator.",
+     "Not a valid iterator.",
+     "access to an out of range."
+    ]
+   },
+   {
+    "score": 6,
+    "root": "0x8b8e60",
+    "size": 434,
+    "statics": [
+     "MapItemMan"
+    ],
+    "consts": {
+     "0x80000000": 1,
+     "0x0FFFFFFF": 2,
+     "0xF0000000": 1
+    },
+    "strings": []
+   },
+   {
+    "score": 6,
+    "root": "0x8b9ff0",
+    "size": 596,
+    "statics": [
+     "MapItemMan"
+    ],
+    "consts": {
+     "0x80000000": 2,
+     "0x20000000": 1,
+     "0x0FFFFFFF": 4,
+     "0xF0000000": 2
+    },
+    "strings": []
+   },
+   {
+    "score": 6,
+    "root": "0x983490",
+    "size": 1081,
+    "statics": [
+     "MapItemMan"
+    ],
+    "consts": {
+     "0x80000000": 1,
+     "0x0FFFFFFF": 2,
+     "0xF0000000": 1
+    },
+    "strings": [
+     "DetailStatusView/Status_Effects",
+     "DetailStatusView/AdjustPosTop"
+    ]
+   },
+   {
+    "score": 5,
+    "root": "0x1dce10",
+    "size": 713,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 1,
+     "0x80000000": 1
+    },
+    "strings": []
+   },
+   {
+    "score": 5,
+    "root": "0x1f3500",
+    "size": 507,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 1,
+     "0x0FFFFFFF": 3,
+     "0xF0000000": 3
+    },
+    "strings": []
+   },
+   {
+    "score": 5,
+    "root": "0x1f49a0",
+    "size": 980,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 2,
+     "0x20000000": 2,
+     "0x0FFFFFFF": 14,
+     "0xF0000000": 7
+    },
+    "strings": []
+   },
+   {
+    "score": 5,
+    "root": "0x1f6030",
+    "size": 398,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x80000000": 2,
+     "0x0FFFFFFF": 2,
+     "0xF0000000": 3
+    },
+    "strings": []
+   },
+   {
+    "score": 5,
+    "root": "0x1fc5e0",
+    "size": 1568,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 2,
+     "0x0FFFFFFF": 4,
+     "0xF0000000": 2
+    },
+    "strings": []
+   },
+   {
+    "score": 5,
+    "root": "0x1fcd10",
+    "size": 355,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 1,
+     "0x0FFFFFFF": 2,
+     "0xF0000000": 1
+    },
+    "strings": []
+   },
+   {
+    "score": 5,
+    "root": "0x20a120",
+    "size": 2400,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x80000000": 1,
+     "0x0FFFFFFF": 3,
+     "0xF0000000": 2
+    },
+    "strings": []
+   },
+   {
+    "score": 5,
+    "root": "0x576f00",
+    "size": 1611,
+    "statics": [
+     "GameDataMan"
+    ],
+    "consts": {
+     "0x40000000": 1,
+     "0x80000000": 1,
+     "0x00FFFFFF": 1
+    },
+    "strings": []
+   }
+  ]
+ },
+ "misc": {
+  "cs_lua_event_manager_static_from_ER_AOB": "0x605130"
+ },
+ "key_singletons": {
+  "CSEventFlagMan": "0x3c115a8",
+  "WorldChrMan": "0x3c0f0a8",
+  "CSMenuMan": "0x3c149d8",
+  "MapItemMan": "0x3c10b68",
+  "SoloParamRepository": "0x3c28880",
+  "MsgRepository": "0x3c246a8",
+  "CSSystemProperties": "0x442f1d0",
+  "CSNetMan": "0x3c046a8",
+  "CSFile": "0x3c04a28",
+  "CSRegulationManager": "0x3c2d400",
+  "CSGaitem": "0x3c131c8",
+  "CSItemGetMenuMan": "0x3c14c38",
+  "CSLuaEventMan": "0x3c10f60",
+  "CSEventMan": "0x3c117c8",
+  "CSSessionManager": "0x3c21ec8",
+  "CSTask": "0x4434000",
+  "CSTaskGroup": "0x4434088",
+  "CSFeMan": "0x3c14a70",
+  "CSTrophy": "0x442f960",
+  "CSEventFlagUsageParamManager": "0x3c27688",
+  "WorldAreaTime": "0x3c125d8",
+  "CSFade": "0x3c1abc0",
+  "CSWindow": "0x4433980",
+  "CSHavokMan": "0x3c1e028",
+  "CSCamera": "0x3c0b0e8"
+ }
+}

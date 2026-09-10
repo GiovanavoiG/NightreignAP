@@ -3,8 +3,9 @@ from typing import Callable, Dict, List, Optional, Tuple
 
 from BaseClasses import Location
 
-from .data import (BASE_ID, DEEP_OF_NIGHT_DEPTHS, FIELD_BOSSES, GAME_NAME, GLOBAL_RUN_CHALLENGES, GRAILS,
-                   NIGHT1_BOSSES, NIGHT2_BOSSES, NIGHT_BOSSES_DLC, NIGHTFARERS, NIGHTLORDS, PER_RUN_CHALLENGES,
+from .data import (BASE_ID, DEEP_OF_NIGHT_DEPTHS, FIELD_BOSSES, GAME_NAME, GLOBAL_RUN_CHALLENGES,
+                   GLOBAL_RUN_CHALLENGES_EXTENDED, GRAIL_ROWS, GRAILS, NIGHT1_BOSSES, NIGHT2_BOSSES, NIGHT_BOSSES_DLC,
+                   NIGHTFARERS, NIGHTLORDS, PER_RUN_CHALLENGES, PER_RUN_CHALLENGES_EXTENDED, REMEMBRANCE_CHAPTER_FLAGS,
                    SHIFTING_EARTH, vessel_unlock_flags)
 
 
@@ -70,16 +71,15 @@ FIELD_BOSS_LOCATIONS = [
     _add(f"Field Boss: {b} Defeated", 200 + i, ANY_EXPEDITION, "Field Boss") for i, b in enumerate(FIELD_BOSSES)
 ]
 
-# Remembrance chapters (offset 300..). Flag: the chapter's PersonalScenarioParam objective flag. Only the
-# per-hero *range* is known so far; chapter->row mapping is left for the flag capture pass (flag=0 => the
-# mod falls back to counting completed objectives in the hero's range).
+# Remembrance chapters (offset 300..). Flag = completion flag from PersonalScenarioParam (see data.py).
 REMEMBRANCE_LOCATIONS = []
 _off = 300
 for _nf in NIGHTFARERS:
     for _ch in range(1, _nf.remembrance_chapters + 1):
         REMEMBRANCE_LOCATIONS.append(_add(f"Remembrance: {_nf.name} - Chapter {_ch}", _off, ANY_EXPEDITION,
                                           "Remembrance", dlc=_nf.dlc, nightfarer=_nf.name, chapter=_ch,
-                                          requires=(f"Nightfarer: {_nf.name}",)))
+                                          requires=(f"Nightfarer: {_nf.name}",),
+                                          flag=REMEMBRANCE_CHAPTER_FLAGS[_nf.name].get(_ch, 0)))
         _off += 1
 
 # Vessels (offset 400..). Flag: first Goblet slot of the hero (AntiqueStandParam unlockFlag pattern).
@@ -91,7 +91,7 @@ for _i, _nf in enumerate(NIGHTFARERS):
 _grail_req = {"Spirit Shelter Grail": 4, "Giant's Cradle Grail": 7, "Sacred Erdtree Grail": 8}
 for _i, (_g, _) in enumerate(GRAILS):
     VESSEL_LOCATIONS.append(_add(f"Small Jar Bazaar: Buy {_g}", 420 + _i, ROUNDTABLE, "Vessel",
-                                 nightlords_cleared=_grail_req[_g]))
+                                 nightlords_cleared=_grail_req[_g], flag=GRAIL_ROWS[_i][0]))
 
 # Character unlock quests (offset 440..)
 UNLOCK_LOCATIONS = [
@@ -111,6 +111,16 @@ for _nf in NIGHTFARERS:
         _off += 1
 for _c in GLOBAL_RUN_CHALLENGES:
     PER_RUN_LOCATIONS.append(_add(f"Run Challenge: {_c}", _off, ANY_EXPEDITION, "Run Challenge"))
+    _off += 1
+# Extended pool (offset 560..): option run_challenge_pool = extended
+_off = 560
+for _nf in NIGHTFARERS:
+    for _c in PER_RUN_CHALLENGES_EXTENDED:
+        PER_RUN_LOCATIONS.append(_add(f"Run Challenge: {_c} as {_nf.name}", _off, ANY_EXPEDITION, "Run Challenge Extended",
+                                      dlc=_nf.dlc, nightfarer=_nf.name, requires=(f"Nightfarer: {_nf.name}",)))
+        _off += 1
+for _c in GLOBAL_RUN_CHALLENGES_EXTENDED:
+    PER_RUN_LOCATIONS.append(_add(f"Run Challenge: {_c}", _off, ANY_EXPEDITION, "Run Challenge Extended"))
     _off += 1
 
 # Shifting Earth (offset 450..)

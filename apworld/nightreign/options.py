@@ -96,6 +96,17 @@ class PerRunChecks(Toggle):
     display_name = "Per-Run Challenge Checks"
 
 
+class RunChallengePool(Choice):
+    """
+    Which per-run challenge locations are used when Per-Run Challenge Checks is on.
+    basic: 3 per Nightfarer + 9 general (39). extended: adds 3 more per Nightfarer + 20 general (89 total).
+    """
+    display_name = "Run Challenge Pool"
+    option_basic = 0
+    option_extended = 1
+    default = 0
+
+
 class DeepOfNightChecks(Toggle):
     """Reaching each Deep of Night depth is a location; a Deep of Night Access item is added."""
     display_name = "Deep of Night Checks"
@@ -131,6 +142,7 @@ class NightreignOptions(PerGameCommonOptions, DeathLinkMixin):
     field_boss_checks: FieldBossChecks
     vessel_checks: VesselChecks
     per_run_checks: PerRunChecks
+    run_challenge_pool: RunChallengePool
     deep_of_night_checks: DeepOfNightChecks
     seamless_coop: SeamlessCoop
     trap_percentage: TrapPercentage
@@ -141,6 +153,7 @@ option_groups = [
     OptionGroup("Goal & DLC", [Goal, DlcForsakenHollows]),
     OptionGroup("Structure", [ExpeditionLocks, NightfarerShuffle, StartingNightfarer, RemembranceLocks,
                               ShiftingEarthLocks]),
-    OptionGroup("Location Pools", [NightBossChecks, FieldBossChecks, VesselChecks, PerRunChecks, DeepOfNightChecks]),
+    OptionGroup("Location Pools", [NightBossChecks, FieldBossChecks, VesselChecks, PerRunChecks, RunChallengePool,
+                                   DeepOfNightChecks]),
     OptionGroup("Item Pool & Play", [TrapPercentage, SeamlessCoop]),
 ]

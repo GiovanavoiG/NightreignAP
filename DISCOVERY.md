@@ -111,3 +111,31 @@ and the mod's item-offset table mirrors `items.py` (this pair should be protecte
 Nightreign is not on r2modman/Thunderstore. The intended manager is me3 itself (double-click profile) or the
 **Mod Engine 3 Manager** (Nexus Nightreign #213) which imports folder mods. `mod/build.ps1 -Deploy` stages the
 folder in the standard me3 mods location.
+
+## 8. Update 2026-09-10 — offline extraction from the installed game (App 1.03.2 / Regulation 1.03.5)
+
+Done with the user's install (`regulation.bin`, the `.bhd` headers, byte slices out of the `.bdt` archives and the
+exe itself, moved through the desktop bridge in 4 MB pieces):
+
+- **Params**: all 252 params decrypted and dumped (`tools/nr_params.py`, layouts from `fromsoftware-rs`); the
+  AP-relevant tables are in `research/params/` with Smithbox row names in `research/names/`.
+- **Flags are now exact**: Nightlord defeat 150–162 (unlock 0/110/115/135/136), Everdark 170–181, Nightfarer
+  unlocks 6031/6037/6038/6039, Deep of Night unlock 130, **Remembrance chapter flags per hero** (row names
+  "Wylder: Chapter N" → `REMEMBRANCE_CHAPTER_FLAGS` in `data.py`; the row blocks are *not* in hero-type order:
+  2000s = Duchess, 3000s = Raider, 4000s = Executor, 5000s = Recluse, 6000s = Ironeye, 7000s = Guardian,
+  8000s = Revenant, 9000s = Scholar, 10000s = Undertaker), vessel unlock flags + goods ids for all 74 vessels
+  (`VESSEL_ROWS`, Grails 60410/60420/60400 + DLC Scadutree 60430), relic/flatstone/Murk antique ids, garb goods.
+- **Roundtable Hold EMEVD** (`m10_00_00_00`) confirms the semantics: the Duchess-unlock event writes 6031, the
+  Night Aspect unlock writes 115, Deep of Night toggles 130 gated on 136.
+- **Exe scan** (`tools/nr_scan.py`, `research/nightreign_exe_scan.md`, `nightreign_rvas.json`): version gate
+  ProductVersion 1.3.3.0; 232 FD4 singletons resolved by name; `GameDataMan` 0x3c078d0 (CONFIRMED),
+  `CSEventFlagMan` 0x3c115a8, `WorldChrMan` 0x3c0f0a8, `CSFD4VirtualMemoryFlag::GetFlag` 0x60ce40 /
+  `SetFlag` 0x60d330 (ER-compatible layout), `CS::EquipGameData::AddInventoryEquip` 0x1f0160 (LIKELY grant/hook
+  target; `EquipGameData = PlayerGameData+0x1d8`, `last_add_item_result +0x304`). The mod now uses these through
+  `mod/src/game/rva.rs` with byte-signature guards and a version gate.
+- **dlc01 archive key** recovered from the exe (`tools/nr_key_dlc01.pem`); the base-game message bundles are
+  `item_dlc01`/`menu_dlc01` (the exe references only those names).
+
+Still live-only: the `ItemEntry` layout for `AddInventoryEquip`, the Murk field / HP offsets in `PlayerGameData`
+(DeathLink kill and Murk-tax trap are disabled until confirmed), Shifting Earth availability flags, the four
+UI confirm sites for locks, and per-run challenge detection.

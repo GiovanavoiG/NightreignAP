@@ -9,7 +9,8 @@ from BaseClasses import CollectionState, Item, ItemClassification, Region, Tutor
 from worlds.AutoWorld import WebWorld, World
 from worlds.generic.Rules import add_rule, set_rule
 
-from .data import BASE_ID, BASE_NIGHTLORDS, GAME_NAME, NIGHTFARERS, NIGHTLORDS, STARTING_NIGHTFARER_CHOICES
+from .data import (BASE_ID, BASE_NIGHTLORDS, GAME_NAME, GRAIL_ROWS, NIGHTFARERS, NIGHTLORDS,
+                   REMEMBRANCE_OBJECTIVE_FLAGS, STARTING_NIGHTFARER_CHOICES, VESSEL_ROWS)
 from .items import (ALL_ITEMS, DEEP_OF_NIGHT_ITEM, EVENT_ITEMS, EXPEDITION_ITEMS, FILLER_ITEMS, GOBLET_ITEMS,
                     GRAIL_ITEMS, NIGHTFARER_ITEMS, REMEMBRANCE_ITEMS, REMEMBRANCE_KEY_ITEMS, SHIFTING_EARTH_ITEMS,
                     TRAP_ITEMS, ItemData,
@@ -71,6 +72,8 @@ class NightreignWorld(World):
             if loc.category == "Deep" and not o.deep_of_night_checks:
                 continue
             if loc.category == "Run Challenge" and not o.per_run_checks:
+                continue
+            if loc.category == "Run Challenge Extended" and not (o.per_run_checks and o.run_challenge_pool):
                 continue
             if loc.category == "Unlock" and not o.nightfarer_shuffle:
                 # With vanilla unlocks the quests still happen; keep them as checks.
@@ -270,7 +273,8 @@ class NightreignWorld(World):
     def fill_slot_data(self) -> Mapping[str, Any]:
         data = self.options.as_dict("goal", "dlc_forsaken_hollows", "expedition_locks", "nightfarer_shuffle",
                                     "remembrance_locks", "shifting_earth_locks", "night_boss_checks",
-                                    "field_boss_checks", "vessel_checks", "per_run_checks", "deep_of_night_checks",
+                                    "field_boss_checks", "vessel_checks", "per_run_checks", "run_challenge_pool",
+                                    "deep_of_night_checks",
                                     "seamless_coop", "death_link")
         data["starting_nightfarer"] = self.starting_nightfarer
         data["world_version"] = "0.2.0"
@@ -278,4 +282,7 @@ class NightreignWorld(World):
         data["nightlord_defeat_flags"] = [nl.defeat_flag for nl in NIGHTLORDS]
         data["nightfarer_unlock_flags"] = [nf.unlock_flag for nf in NIGHTFARERS]
         data["remembrance_flag_ranges"] = {nf.name: list(nf.remembrance_flags) for nf in NIGHTFARERS}
+        data["remembrance_objective_flags"] = {nf.name: REMEMBRANCE_OBJECTIVE_FLAGS[nf.name] for nf in NIGHTFARERS}
+        data["vessel_goods"] = {nf.name: VESSEL_ROWS[nf.hero_type] for nf in NIGHTFARERS}
+        data["grail_goods"] = GRAIL_ROWS
         return data

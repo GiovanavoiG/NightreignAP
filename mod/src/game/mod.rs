@@ -8,7 +8,9 @@
 pub mod flags;
 pub mod grant;
 pub mod locks;
+pub mod rva;
 pub mod singletons;
+pub mod version;
 
 use crate::state::{push_log, shared};
 use std::thread;
@@ -81,7 +83,7 @@ pub fn spawn_poller() {
             // 3) locks (cheap; re-evaluated every tick so they follow item receipt)
             locks::refresh();
 
-            // 4) death detection for DeathLink
+            // 4) death detection for DeathLink (disabled until the HP offset is confirmed)
             if shared().lock().slot_data.death_link && singletons::player_just_died() {
                 shared().lock().pending_death = true;
             }
