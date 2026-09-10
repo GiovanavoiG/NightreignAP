@@ -1,0 +1,18 @@
+name: Nightfarer
+game: Elden Ring Nightreign
+Elden Ring Nightreign:
+  goal: heolstor
+  dlc_forsaken_hollows: true
+  expedition_locks: true
+  nightfarer_shuffle: true
+  starting_nightfarer: random_nightfarer
+  remembrance_locks: key
+  per_run_checks: true
+  seamless_coop: false
+  shifting_earth_locks: true
+  night_boss_checks: true
+  field_boss_checks: true
+  vessel_checks: true
+  deep_of_night_checks: true
+  trap_percentage: 10
+  death_link: false

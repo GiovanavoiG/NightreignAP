@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  AP_VERSION: "0.6.7"
+
+jobs:
+  apworld:
+    name: APWorld tests + package (Archipelago ${{ env.AP_VERSION }})
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check out Archipelago ${{ env.AP_VERSION }}
+        run: git clone --depth 1 --branch ${{ env.AP_VERSION }} https://github.com/ArchipelagoMW/Archipelago.git ap
+      - name: Install Archipelago requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ap/requirements.txt
+      - name: Link world into Archipelago
+        run: ln -s "$GITHUB_WORKSPACE/apworld/nightreign" ap/worlds/nightreign
+      - name: Unit tests
+        working-directory: ap
+        env:
+          SKIP_REQUIREMENTS_UPDATE: "1"
+        run: python -m unittest discover -s worlds/nightreign/test -t . -v
+      - name: Test generation
+        working-directory: ap
+        env:
+          SKIP_REQUIREMENTS_UPDATE: "1"
+        run: python Generate.py --player_files_path "$GITHUB_WORKSPACE/players" --outputpath "$GITHUB_WORKSPACE/build/gen" --seed 1 < /dev/null
+      - name: Package .apworld
+        run: python tools/pack_apworld.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nightreign.apworld
+          path: build/nightreign.apworld
+
+  mod-dll:
+    name: nightreign_archipelago.dll (me3 native)
+    runs-on: windows-latest
+    # The Rust crate has not been compiled against the real archipelago_rs / hudhook / fromsoftware-rs
+    # APIs yet; expect the first runs to surface API drift. Failures are reported but do not block the
+    # apworld job.
+    continue-on-error: true
+    defaults:
+      run:
+        working-directory: mod
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: x86_64-pc-windows-msvc
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: mod
+      - name: Build
+        run: cargo build --release --target x86_64-pc-windows-msvc
+      - name: Stage me3 mod folder
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist | Out-Null
+          Copy-Item target\x86_64-pc-windows-msvc\release\nightreign_archipelago.dll dist\
+          Copy-Item nightreign-archipelago.me3, archipelago.toml dist\
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nightreign-archipelago-me3
+          path: mod/dist
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [apworld, mod-dll]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Zip mod folder
+        run: cd artifacts && zip -r ../nightreign-archipelago-me3.zip nightreign-archipelago-me3 || true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            artifacts/nightreign.apworld/nightreign.apworld
+            nightreign-archipelago-me3.zip

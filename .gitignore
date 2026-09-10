@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.apworld
+build/
+dist/
+target/
+output/
+*.log
+.pytest_cache/

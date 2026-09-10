@@ -1,0 +1,17 @@
+# Mod Engine 3 profile for the Nightreign Archipelago client.
+# Double-click this file (after installing me3) to launch nightreign.exe without EAC, offline,
+# with a dedicated save file and the Archipelago DLL loaded.
+profileVersion = "v1"
+
+[[supports]]
+game = "nightreign"
+
+# Never touch the player's real save.
+savefile = "NR_AP.sl2"
+start_online = false
+disable_arxan = true
+
+[[natives]]
+path = "nightreign_archipelago.dll"
+# Load before the game's main so we can hook early singletons (me3 >= 0.11).
+premain = true

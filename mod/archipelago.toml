@@ -1,0 +1,13 @@
+# Archipelago connection settings for the Nightreign mod (also editable from the in-game overlay).
+server = "archipelago.gg:38281"
+slot = "Nightfarer"
+password = ""
+
+[overlay]
+toggle_key = "F9"
+
+[behaviour]
+# How often (ms) to poll event flags for new checks.
+poll_interval_ms = 500
+# Show a toast for every received item.
+toasts = true
